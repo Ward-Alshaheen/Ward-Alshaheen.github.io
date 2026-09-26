@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ward-alshaheen.github.io/sitemap.xml
