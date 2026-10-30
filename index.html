@@ -8,7 +8,7 @@
   <title>ورد الشاهين | Ward Alshaheen - مهندس برمجيات ومطور لارافيل</title>
   <meta name="title" content="ورد الشاهين | Ward Alshaheen - مهندس برمجيات ومطور لارافيل">
   <meta name="description" content="الموقع الرسمي ومعرض أعمال مهندس البرمجيات ومطور لارافيل ورد الشاهين (Ward Alshaheen). خريج جامعة دمشق متخصص في هندسة الأنظمة الخلفية (Backend Architecture)، قواعد البيانات، وتطبيقات الويب عالية الأداء.">
-  <meta name="keywords" content="ورد الشاهين, ورد شاهين, Ward Alshaheen, Ward Al Shaheen, ward alshaheen, ward_alshaheen, Laravel Developer, مهندس برمجيات, مطور لارافيل, Backend Developer, Clean Architecture, Damascus University, جامعة دمشق, Reparametrize Foundation, HabApps">
+  <meta name="keywords" content="ورد الشاهين, ورد شاهين, Ward Alshaheen, Ward Al Shaheen, ward alshaheen, ward_alshaheen, Laravel Developer, NestJS Developer, مهندس برمجيات, مطور لارافيل, Backend Developer, Clean Architecture, Damascus University, جامعة دمشق, Reparametrize Foundation, HabApps, Kozee, CBHA">
   <meta name="author" content="Ward Alshaheen (ورد الشاهين)">
   <meta name="application-name" content="ورد الشاهين | Ward Alshaheen">
   <meta name="apple-mobile-web-app-title" content="ورد الشاهين">
@@ -95,11 +95,15 @@
         "knowsAbout": [
           "Laravel",
           "PHP",
+          "NestJS",
+          "TypeScript",
+          "Prisma ORM",
           "Clean Architecture",
           "RESTful APIs",
           "GraphQL",
           "WebSockets",
           "MySQL",
+          "PostgreSQL",
           "Docker",
           "Software Engineering"
         ],
@@ -185,8 +189,11 @@
   </div>
   <div class="bg-grid"></div>
 
+  <!-- Top Scroll Progress Indicator -->
+  <div id="scrollProgress" class="scroll-progress-bar" aria-hidden="true"></div>
+
   <!-- Main Navigation Bar -->
-  <header class="navbar">
+  <header class="navbar" id="mainNavbar">
     <div class="nav-container">
       <a href="#home" class="nav-logo">
         <span class="logo-code">&lt;</span>
@@ -205,7 +212,14 @@
           <li><a href="#projects" class="nav-link" data-i18n="nav_projects">المشاريع</a></li>
           <li><a href="#references" class="nav-link" data-i18n="nav_references">المعرفون</a></li>
           <li><a href="#contact" class="nav-link" data-i18n="nav_contact">تواصل</a></li>
-          <li class="md:hidden pt-2 border-t border-slate-700/50 mt-1">
+          <li class="md:hidden pt-2 border-t border-slate-700/50 mt-1 flex flex-col gap-2">
+            <a href="./ward alshaheen.pdf" target="_blank" rel="noopener noreferrer" class="btn-secondary !w-full justify-center !py-2.5 !text-sm flex items-center gap-2">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                <circle cx="12" cy="12" r="3"></circle>
+              </svg>
+              <span data-i18n="hero_btn_cv_preview">معاينة الـ CV</span>
+            </a>
             <a href="./ward alshaheen.pdf" download="Ward_Alshaheen_CV.pdf" class="btn-primary !w-full justify-center !py-2.5 !text-sm flex items-center gap-2">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
@@ -218,7 +232,7 @@
         </ul>
       </nav>
 
-      <!-- Action Buttons (Lang Toggle, CV Download) -->
+      <!-- Action Buttons (Lang Toggle, GitHub, CV Preview & Download) -->
       <div class="nav-actions">
         <!-- Language Switcher -->
         <button id="langToggle" class="icon-btn whitespace-nowrap" title="Switch Language" aria-label="Toggle language">
@@ -230,7 +244,20 @@
           <span class="lang-text" style="font-weight: 700; font-size: 0.8rem;">EN</span>
         </button>
 
+        <!-- GitHub Quick Link -->
+        <a href="https://github.com/Ward-Alshaheen" target="_blank" rel="noopener noreferrer" class="icon-btn hidden sm:inline-flex" title="GitHub (@Ward-Alshaheen)" aria-label="GitHub Profile">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+          </svg>
+        </a>
 
+        <!-- Quick CV Preview in Browser Tab -->
+        <a href="./ward alshaheen.pdf" target="_blank" rel="noopener noreferrer" class="icon-btn hidden xl:inline-flex whitespace-nowrap" title="معاينة السيرة الذاتية / Preview CV" aria-label="Preview CV in browser">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+            <circle cx="12" cy="12" r="3"></circle>
+          </svg>
+        </a>
 
         <!-- Quick CV Download Link -->
         <a href="./ward alshaheen.pdf" download="Ward_Alshaheen_CV.pdf" class="btn-primary !py-2 !px-3.5 !text-xs hidden sm:inline-flex whitespace-nowrap">
@@ -300,20 +327,21 @@
               <span data-i18n="hero_btn_rec">عرض التوصية</span>
             </a>
 
+            <a href="./ward alshaheen.pdf" target="_blank" rel="noopener noreferrer" class="btn-secondary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                <circle cx="12" cy="12" r="3"></circle>
+              </svg>
+              <span data-i18n="hero_btn_cv_preview">معاينة الـ CV</span>
+            </a>
+
             <a href="./ward alshaheen.pdf" download="Ward_Alshaheen_CV.pdf" class="btn-secondary">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
                 <polyline points="7 10 12 15 17 10"></polyline>
                 <line x1="12" y1="15" x2="12" y2="3"></line>
               </svg>
-              <span data-i18n="hero_btn_cv">تحميل السيرة الذاتية (CV)</span>
-            </a>
-
-            <a href="#contact" class="btn-secondary">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-              </svg>
-              <span data-i18n="hero_btn_contact">تواصل معي</span>
+              <span data-i18n="hero_btn_cv">تحميل الـ CV</span>
             </a>
           </div>
         </div>
@@ -325,18 +353,29 @@
 
           <!-- Floating Badges -->
           <div class="floating-pill pill-1">
-            <span style="color: #ff2d20; font-size: 1.1rem;">⚡</span>
-            <span>Laravel & PHP</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ff2d20" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+            </svg>
+            <span dir="ltr">Laravel &amp; NestJS</span>
           </div>
 
           <div class="floating-pill pill-2">
-            <span style="color: #06b6d4; font-size: 1.1rem;">🏛️</span>
-            <span>Clean Architecture</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#06b6d4" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+              <polyline points="2 17 12 22 22 17"></polyline>
+              <polyline points="2 12 12 17 22 12"></polyline>
+            </svg>
+            <span dir="ltr">Clean Architecture</span>
           </div>
 
           <div class="floating-pill pill-3">
-            <span style="color: #10b981; font-size: 1.1rem;">🚀</span>
-            <span>REST & GraphQL APIs</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+              <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+              <line x1="6" y1="6" x2="6.01" y2="6"></line>
+              <line x1="6" y1="18" x2="6.01" y2="18"></line>
+            </svg>
+            <span dir="ltr">APIs &amp; Docker</span>
           </div>
 
           <div class="avatar-frame">
@@ -369,7 +408,7 @@
             </svg>
           </div>
           <div>
-            <div class="stat-number" data-val="+7" data-i18n="stat_proj_val">+7</div>
+            <div class="stat-number" data-val="+8" data-i18n="stat_proj_val">+8</div>
             <div class="stat-label" data-i18n="stat_proj_lbl">مشاريع وأنظمة متكاملة</div>
           </div>
         </div>
@@ -626,6 +665,13 @@
             </div>
             <div class="skill-item">
               <span class="skill-name">
+                <span class="text-rose-400">●</span>
+                <span>NestJS & TypeScript</span>
+              </span>
+              <span class="skill-level-badge">Advanced</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">
                 <span class="text-cyan-400">●</span>
                 <span>RESTful APIs</span>
               </span>
@@ -718,6 +764,13 @@
               <span class="skill-name">
                 <span class="text-cyan-400">●</span>
                 <span>MySQL & SQL</span>
+              </span>
+              <span class="skill-level-badge">Advanced</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">
+                <span class="text-sky-400">●</span>
+                <span>Prisma ORM & PostgreSQL</span>
               </span>
               <span class="skill-level-badge">Advanced</span>
             </div>
@@ -853,6 +906,10 @@
                 <div class="timeline-company-wrapper">
                   <span class="timeline-company" data-i18n="exp_comp_2">HabApps</span>
                   <span class="timeline-type-badge badge-fulltime"><span class="type-dot"></span><span data-i18n="exp_type_2">Full-Time</span></span>
+                  <a href="https://kozee-sy.com/" target="_blank" rel="noopener noreferrer" class="project-live-pill !text-[0.68rem] !py-0.5 !px-2" title="Kozee Live Website">
+                    <span class="pulse-dot-sm"></span>
+                    <span>kozee-sy.com ↗</span>
+                  </a>
                 </div>
               </div>
               <span class="timeline-date" data-i18n="exp_date_2">فبراير 2026 – يوليو 2026</span>
@@ -970,77 +1027,207 @@
         <button class="filter-btn" data-filter="research" data-i18n="filter_research">الذكاء الاصطناعي والأبحاث</button>
       </div>
 
-      <!-- Projects Grid -->
+      <!-- Projects Grid (12-Col Bento Showcase) -->
       <div class="projects-grid" id="projectsContainer">
-        <!-- 1. Kozee -->
-        <div class="project-card" data-category="backend platforms enterprise">
+        <!-- 1. Kozee (Flagship Live Production Showcase) -->
+        <div class="project-card project-card-live project-card-showcase" data-category="backend platforms enterprise">
+          <a href="https://kozee-sy.com/" target="_blank" rel="noopener noreferrer" class="browser-mockup" aria-label="Open kozee-sy.com">
+            <div class="browser-bar">
+              <div class="browser-dots">
+                <span class="browser-dot browser-dot-red"></span>
+                <span class="browser-dot browser-dot-amber"></span>
+                <span class="browser-dot browser-dot-green"></span>
+              </div>
+              <div class="browser-url">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                  <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                </svg>
+                <span>kozee-sy.com</span>
+              </div>
+              <span class="browser-ext-icon">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </span>
+            </div>
+            <div class="browser-viewport">
+              <img src="./assets/previews/kozee-preview.webp" alt="Kozee Real Estate Platform - kozee-sy.com" width="1100" height="688" loading="lazy">
+              <span class="browser-hover-cta">
+                <span class="pulse-dot-sm"></span>
+                <span data-i18n="live_preview_cta">فتح الموقع الحي ↗</span>
+              </span>
+            </div>
+          </a>
+
           <div class="project-header-bar">
-            <span class="project-category-badge" data-i18n="proj_kozee_cat">تطبيقات مؤسسية وواجهات APIs</span>
-            <div class="project-icon-box">🏢</div>
-          </div>
-          <div class="project-body">
-            <h3 class="project-title" data-i18n="proj_kozee_title">Kozee</h3>
-            <p class="project-desc" data-i18n="proj_kozee_desc">
-              منصة عقارية متكاملة تتيح استكشاف العقارات عبر الخرائط التفاعلية الذكية، وفيديوهات الريلز القصيرة، ونظام Caching متطور لسرعة الاستعلامات.
-            </p>
-            <ul class="project-bullets">
-              <li class="project-bullet-item">
-                <span class="project-bullet-dot">▸</span>
-                <span data-i18n="proj_kozee_b1">تصميم وهندسة واجهات RESTful APIs وقواعد بيانات تخدم آلاف العقارات والوسطاء.</span>
-              </li>
-              <li class="project-bullet-item">
-                <span class="project-bullet-dot">▸</span>
-                <span data-i18n="proj_kozee_b2">تطوير خوارزميات الاستكشاف الجغرافي ونظام الريلز لربط أصحاب العقارات والعملاء.</span>
-              </li>
-              <li class="project-bullet-item">
-                <span class="project-bullet-dot">▸</span>
-                <span data-i18n="proj_kozee_b3">تحسين فهارس MySQL وإدارة بنية الخوادم لضمان أداء مستقر وعالي الموثوقية.</span>
-              </li>
-            </ul>
-            <div class="project-tags">
-              <span class="tag-pill">Laravel</span>
-              <span class="tag-pill">MySQL</span>
-              <span class="tag-pill">RESTful API</span>
-              <span class="tag-pill">Map Discovery</span>
-              <span class="tag-pill">Video Reels</span>
+            <span class="project-category-badge" data-i18n="proj_kozee_cat">منصة عقارية متكاملة وواجهات APIs</span>
+            <div class="project-icon-box" title="Real Estate & Geo-Spatial Ecosystem">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 21h18"></path>
+                <path d="M5 21V7l8-4v18"></path>
+                <path d="M19 21V11l-6-4"></path>
+                <path d="M9 9v.01"></path>
+                <path d="M9 12v.01"></path>
+                <path d="M9 15v.01"></path>
+                <path d="M9 18v.01"></path>
+              </svg>
             </div>
           </div>
+
+          <div class="project-body">
+            <div class="project-title-row">
+              <h3 class="project-title" data-i18n="proj_kozee_title">Kozee</h3>
+              <a href="https://kozee-sy.com/" target="_blank" rel="noopener noreferrer" class="project-live-pill" title="Open kozee-sy.com">
+                <span class="pulse-dot-sm"></span>
+                <span>kozee-sy.com ↗</span>
+              </a>
+            </div>
+            <p class="project-desc" data-i18n="proj_kozee_desc">
+              منصة عقارية متكاملة تتيح استكشاف العقارات عبر الخرائط التفاعلية، وفيديوهات الريلز القصيرة، مع محرك إعلانات ونظام باقات واشتراكات ولوحة تحكم شاملة.
+            </p>
+            <div class="project-metrics-strip">
+              <span class="metric-chip"><span class="metric-chip-dot"></span><span data-i18n="proj_kozee_m1">خرائط تفاعلية + ريلز</span></span>
+              <span class="metric-chip"><span class="metric-chip-dot" style="background: #10b981;"></span><span data-i18n="proj_kozee_m2">مصادقة OTP + Spatie RBAC</span></span>
+              <span class="metric-chip"><span class="metric-chip-dot" style="background: #f59e0b;"></span><span data-i18n="proj_kozee_m3">محرك إعلانات وباقات</span></span>
+            </div>
+            <div class="project-tags">
+              <span class="tag-pill">Laravel 11</span>
+              <span class="tag-pill">MySQL</span>
+              <span class="tag-pill">Sanctum OTP</span>
+              <span class="tag-pill">Spatie RBAC</span>
+              <span class="tag-pill">Map &amp; Reels</span>
+              <span class="tag-pill">Ads Engine</span>
+              <span class="tag-pill">Docker</span>
+            </div>
+          </div>
+
           <div class="project-footer">
             <button class="project-action-btn open-project-modal" data-project="kozee">
-              <span data-i18n="btn_view_details">عرض تفاصيل البنية والميزات</span>
+              <span data-i18n="btn_view_details">عرض التفاصيل والمعمارية البرمجية</span>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <polyline points="9 18 15 12 9 6"></polyline>
               </svg>
             </button>
-            <span class="text-xs text-slate-500 font-semibold">HabApps Lead</span>
+            <a href="https://kozee-sy.com/" target="_blank" rel="noopener noreferrer" class="project-live-btn">
+              <span data-i18n="btn_visit_live">زيارة الموقع</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="transform: none;">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </a>
           </div>
         </div>
 
-        <!-- 2. Nuhieh -->
+        <!-- 2. CBHA Healthcare Platform (Flagship Live Production Showcase) -->
+        <div class="project-card project-card-live project-card-cbha project-card-showcase" data-category="backend platforms">
+          <a href="https://cbha-sy.com/" target="_blank" rel="noopener noreferrer" class="browser-mockup" aria-label="Open cbha-sy.com">
+            <div class="browser-bar">
+              <div class="browser-dots">
+                <span class="browser-dot browser-dot-red"></span>
+                <span class="browser-dot browser-dot-amber"></span>
+                <span class="browser-dot browser-dot-green"></span>
+              </div>
+              <div class="browser-url">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                  <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                </svg>
+                <span>cbha-sy.com</span>
+              </div>
+              <span class="browser-ext-icon">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </span>
+            </div>
+            <div class="browser-viewport">
+              <img src="./assets/previews/cbha-preview.webp" alt="Cham Behavioral Health Associates (CBHA) - cbha-sy.com" width="1100" height="688" loading="lazy">
+              <span class="browser-hover-cta" style="border-color: rgba(56, 189, 248, 0.45); color: #7dd3fc;">
+                <span class="pulse-dot-sm" style="background: #38bdf8; box-shadow: 0 0 8px #38bdf8;"></span>
+                <span data-i18n="live_preview_cta">فتح الموقع الحي ↗</span>
+              </span>
+            </div>
+          </a>
+
+          <div class="project-header-bar">
+            <span class="project-category-badge" style="color: #38bdf8; background: rgba(56, 189, 248, 0.1); border-color: rgba(56, 189, 248, 0.28);" data-i18n="proj_cbha_cat">المنصات الطبية ولوحات التحكم (HealthTech)</span>
+            <div class="project-icon-box" style="background: rgba(56, 189, 248, 0.12); border-color: rgba(56, 189, 248, 0.28); color: #38bdf8;" title="HealthTech & Clinical Administration">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+              </svg>
+            </div>
+          </div>
+
+          <div class="project-body">
+            <div class="project-title-row">
+              <h3 class="project-title" data-i18n="proj_cbha_title">CBHA — عيادة شام للصحة السلوكية</h3>
+              <a href="https://cbha-sy.com/" target="_blank" rel="noopener noreferrer" class="project-live-pill" title="Open cbha-sy.com">
+                <span class="pulse-dot-sm"></span>
+                <span>cbha-sy.com ↗</span>
+              </a>
+            </div>
+            <p class="project-desc" data-i18n="proj_cbha_desc">
+              النظام الخلفي المركزي لمنصة عيادة شام للصحة السلوكية (CBHA) ولوحة الإدارة السريرية، مبني باستخدام NestJS و TypeScript و Prisma ORM.
+            </p>
+            <div class="project-metrics-strip">
+              <span class="metric-chip"><span class="metric-chip-dot" style="background: #38bdf8;"></span><span data-i18n="proj_cbha_m1">47 صلاحية PBAC دقيقة</span></span>
+              <span class="metric-chip"><span class="metric-chip-dot" style="background: #818cf8;"></span><span data-i18n="proj_cbha_m2">15 وحدة سريرية وإدارية</span></span>
+              <span class="metric-chip"><span class="metric-chip-dot" style="background: #10b981;"></span><span data-i18n="proj_cbha_m3">141 اختباراً آلياً (100%)</span></span>
+            </div>
+            <div class="project-tags">
+              <span class="tag-pill" style="color: #38bdf8; border-color: rgba(56, 189, 248, 0.25);">NestJS 12</span>
+              <span class="tag-pill" style="color: #38bdf8; border-color: rgba(56, 189, 248, 0.25);">TypeScript</span>
+              <span class="tag-pill">Prisma ORM</span>
+              <span class="tag-pill">PBAC (47 Perms)</span>
+              <span class="tag-pill">Sharp WebP</span>
+              <span class="tag-pill">Vitest &amp; E2E</span>
+              <span class="tag-pill">Docker</span>
+            </div>
+          </div>
+
+          <div class="project-footer">
+            <button class="project-action-btn open-project-modal" data-project="cbha" style="color: #38bdf8;">
+              <span data-i18n="btn_view_details">عرض التفاصيل والمعمارية البرمجية</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </button>
+            <a href="https://cbha-sy.com/" target="_blank" rel="noopener noreferrer" class="project-live-btn">
+              <span data-i18n="btn_visit_live">زيارة الموقع</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="transform: none;">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- 3. Nuhieh -->
         <div class="project-card" data-category="platforms backend">
           <div class="project-header-bar">
             <span class="project-category-badge" data-i18n="proj_nuhieh_cat">تكنولوجيا التعليم (EdTech Platform)</span>
-            <div class="project-icon-box">🎓</div>
+            <div class="project-icon-box" style="background: rgba(168, 85, 247, 0.12); border-color: rgba(168, 85, 247, 0.26); color: #c084fc;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                <path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"></path>
+              </svg>
+            </div>
           </div>
           <div class="project-body">
             <h3 class="project-title" data-i18n="proj_nuhieh_title">Nuhieh</h3>
             <p class="project-desc" data-i18n="proj_nuhieh_desc">
               منصة تعليمية هجينة توفق بين التعلم الذاتي الرقمي والتعليم الصفي المباشر، وتخدم 4 فئات: الإدارة، المعلمين، الأهالي، والطلاب.
             </p>
-            <ul class="project-bullets">
-              <li class="project-bullet-item">
-                <span class="project-bullet-dot">▸</span>
-                <span data-i18n="proj_nuhieh_b1">هندسة نظام أذونات وصلاحيات متعدد المستويات (RBAC) يخدم 4 فئات مستخدمين بأمان تام.</span>
-              </li>
-              <li class="project-bullet-item">
-                <span class="project-bullet-dot">▸</span>
-                <span data-i18n="proj_nuhieh_b2">بناء أدوات الجداول الدراسية التفاعلية، حساب الدرجات الآلي، ونظام رفع الواجبات.</span>
-              </li>
-              <li class="project-bullet-item">
-                <span class="project-bullet-dot">▸</span>
-                <span data-i18n="proj_nuhieh_b3">تطبيق المعمارية النظيفة (Clean Architecture) لضمان سهولة الفحص والاختبارات والتوسع المستقبلي.</span>
-              </li>
-            </ul>
+            <div class="project-metrics-strip">
+              <span class="metric-chip"><span class="metric-chip-dot" style="background: #c084fc;"></span><span data-i18n="proj_nuhieh_m1">4 بوابات صلاحيات</span></span>
+              <span class="metric-chip"><span class="metric-chip-dot" style="background: #06b6d4;"></span><span data-i18n="proj_nuhieh_m2">منع تعارض الجداول</span></span>
+              <span class="metric-chip"><span class="metric-chip-dot" style="background: #10b981;"></span><span data-i18n="proj_nuhieh_m3">معمارية Clean نظيفة</span></span>
+            </div>
             <div class="project-tags">
               <span class="tag-pill">Laravel</span>
               <span class="tag-pill">Clean Architecture</span>
@@ -1050,7 +1237,7 @@
           </div>
           <div class="project-footer">
             <button class="project-action-btn open-project-modal" data-project="nuhieh">
-              <span data-i18n="btn_view_details">عرض تفاصيل البنية والميزات</span>
+              <span data-i18n="btn_view_details">عرض التفاصيل والمعمارية البرمجية</span>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <polyline points="9 18 15 12 9 6"></polyline>
               </svg>
@@ -1059,31 +1246,27 @@
           </div>
         </div>
 
-        <!-- 3. Care Me -->
+        <!-- 4. Care Me -->
         <div class="project-card" data-category="realtime backend">
           <div class="project-header-bar">
             <span class="project-category-badge" data-i18n="proj_care_cat">الرعاية الصحية والاتصال اللحظي</span>
-            <div class="project-icon-box">🏥</div>
+            <div class="project-icon-box" style="background: rgba(6, 182, 212, 0.12); border-color: rgba(6, 182, 212, 0.26); color: #22d3ee;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path>
+                <path d="M12 5 9.04 7.96a2.17 2.17 0 0 0 0 3.08c.82.82 2.13.85 3 .07l2.07-1.9a2.82 2.82 0 0 1 3.79 0l2.96 2.66"></path>
+              </svg>
+            </div>
           </div>
           <div class="project-body">
             <h3 class="project-title" data-i18n="proj_care_title">Care Me</h3>
             <p class="project-desc" data-i18n="proj_care_desc">
               تطبيق ذكي لإدارة العيادات والمراكز الطبية يتيح التواصل اللحظي بين الطبيب والمريض، حجز المواعيد، وواجهة استعلام مرنة عبر GraphQL.
             </p>
-            <ul class="project-bullets">
-              <li class="project-bullet-item">
-                <span class="project-bullet-dot">▸</span>
-                <span data-i18n="proj_care_b1">محادثة فورية مباشرة عبر WebSockets وإشعارات لحظية للرسائل والمواعيد.</span>
-              </li>
-              <li class="project-bullet-item">
-                <span class="project-bullet-dot">▸</span>
-                <span data-i18n="proj_care_b2">دمج واجهات GraphQL بجانب REST لتوفير استعلامات مرنة وسريعة للسجلات الطبية.</span>
-              </li>
-              <li class="project-bullet-item">
-                <span class="project-bullet-dot">▸</span>
-                <span data-i18n="proj_care_b3">نظام جدولة مواعيد دقيق يمنع التعارض ويدير أوقات الكشف بسلاسة عبر تقنيات القفل (Locking).</span>
-              </li>
-            </ul>
+            <div class="project-metrics-strip">
+              <span class="metric-chip"><span class="metric-chip-dot" style="background: #22d3ee;"></span><span data-i18n="proj_care_m1">محادثة WebSocket فورية</span></span>
+              <span class="metric-chip"><span class="metric-chip-dot" style="background: #f43f5e;"></span><span data-i18n="proj_care_m2">استعلامات GraphQL مرنة</span></span>
+              <span class="metric-chip"><span class="metric-chip-dot" style="background: #10b981;"></span><span data-i18n="proj_care_m3">قفل ذري للمواعيد</span></span>
+            </div>
             <div class="project-tags">
               <span class="tag-pill">Laravel</span>
               <span class="tag-pill">GraphQL</span>
@@ -1094,7 +1277,7 @@
           </div>
           <div class="project-footer">
             <button class="project-action-btn open-project-modal" data-project="care">
-              <span data-i18n="btn_view_details">عرض تفاصيل البنية والميزات</span>
+              <span data-i18n="btn_view_details">عرض التفاصيل والمعمارية البرمجية</span>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <polyline points="9 18 15 12 9 6"></polyline>
               </svg>
@@ -1103,31 +1286,27 @@
           </div>
         </div>
 
-        <!-- 4. AdVance -->
+        <!-- 5. AdVance -->
         <div class="project-card" data-category="realtime backend">
           <div class="project-header-bar">
-            <span class="project-category-badge" data-i18n="proj_advance_cat">التكنولوجيا المالية والإعلانية (FinTech & AdTech)</span>
-            <div class="project-icon-box">💳</div>
+            <span class="project-category-badge" data-i18n="proj_advance_cat">التكنولوجيا المالية والإعلانية (FinTech &amp; AdTech)</span>
+            <div class="project-icon-box" style="background: rgba(245, 158, 11, 0.12); border-color: rgba(245, 158, 11, 0.26); color: #fbbf24;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="5" width="20" height="14" rx="2"></rect>
+                <line x1="2" y1="10" x2="22" y2="10"></line>
+              </svg>
+            </div>
           </div>
           <div class="project-body">
             <h3 class="project-title" data-i18n="proj_advance_title">AdVance</h3>
             <p class="project-desc" data-i18n="proj_advance_desc">
               سوق رقمي يربط بين المعلنين الراغبين بنشر حملاتهم والتطبيقات المستضيفة الساعية لتحقيق عوائد من عرض الإعلانات.
             </p>
-            <ul class="project-bullets">
-              <li class="project-bullet-item">
-                <span class="project-bullet-dot">▸</span>
-                <span data-i18n="proj_advance_b1">بناء بنية محفظة رقمية متكاملة لإدارة الأرصدة والتحويلات المالية داخل المنصة.</span>
-              </li>
-              <li class="project-bullet-item">
-                <span class="project-bullet-dot">▸</span>
-                <span data-i18n="proj_advance_b2">تصميم سجل محاسبي بالقيد المزدوج (Double-Entry Ledger) غير قابل للتلاعب لضمان سلامة العمليات.</span>
-              </li>
-              <li class="project-bullet-item">
-                <span class="project-bullet-dot">▸</span>
-                <span data-i18n="proj_advance_b3">تحليل المشاهدات في الوقت الفعلي وتطبيق أنظمة كشف ومنع التلاعب والنقرات الوهمية.</span>
-              </li>
-            </ul>
+            <div class="project-metrics-strip">
+              <span class="metric-chip"><span class="metric-chip-dot" style="background: #fbbf24;"></span><span data-i18n="proj_advance_m1">سجل محاسبي مزدوج</span></span>
+              <span class="metric-chip"><span class="metric-chip-dot" style="background: #10b981;"></span><span data-i18n="proj_advance_m2">محفظة مالية رقمية</span></span>
+              <span class="metric-chip"><span class="metric-chip-dot" style="background: #ff2d20;"></span><span data-i18n="proj_advance_m3">مكافحة النقرات الوهمية</span></span>
+            </div>
             <div class="project-tags">
               <span class="tag-pill">Laravel</span>
               <span class="tag-pill">Digital Wallet</span>
@@ -1142,35 +1321,32 @@
                 <polyline points="9 18 15 12 9 6"></polyline>
               </svg>
             </button>
-            <span class="text-xs text-slate-500 font-semibold">AdTech & FinTech</span>
+            <span class="text-xs text-slate-500 font-semibold">AdTech &amp; FinTech</span>
           </div>
         </div>
 
-        <!-- 5. BriefCode -->
+        <!-- 6. BriefCode -->
         <div class="project-card" data-category="backend">
           <div class="project-header-bar">
             <span class="project-category-badge" data-i18n="proj_brief_cat">معمارية الأنظمة والمترجمات</span>
-            <div class="project-icon-box">⚙️</div>
+            <div class="project-icon-box" style="background: rgba(99, 102, 241, 0.12); border-color: rgba(99, 102, 241, 0.26); color: #818cf8;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+                <line x1="14" y1="4" x2="10" y2="20"></line>
+              </svg>
+            </div>
           </div>
           <div class="project-body">
             <h3 class="project-title" data-i18n="proj_brief_title">BriefCode</h3>
             <p class="project-desc" data-i18n="proj_brief_desc">
               بيئة تطوير برمجيات منخفضة الكود (Low-Code) لتطبيقات الهواتف تعتمد على البرمجة موجهة الجوانب (AOP) وتقنيات المترجمات.
             </p>
-            <ul class="project-bullets">
-              <li class="project-bullet-item">
-                <span class="project-bullet-dot">▸</span>
-                <span data-i18n="proj_brief_b1">تطبيق البرمجة موجهة الجوانب (AOP) لفصل الاهتمامات المشتركة عبر النظام بنظافة.</span>
-              </li>
-              <li class="project-bullet-item">
-                <span class="project-bullet-dot">▸</span>
-                <span data-i18n="proj_brief_b2">خوارزميات إدارة التنافس على الموارد وتحليل شجرة النحو المجردة (AST Parsing).</span>
-              </li>
-              <li class="project-bullet-item">
-                <span class="project-bullet-dot">▸</span>
-                <span data-i18n="proj_brief_b3">توظيف أنماط التصميم المتقدمة (Repository, Façade, Factory, Strategy).</span>
-              </li>
-            </ul>
+            <div class="project-metrics-strip">
+              <span class="metric-chip"><span class="metric-chip-dot" style="background: #818cf8;"></span><span data-i18n="proj_brief_m1">فصل الجوانب AOP</span></span>
+              <span class="metric-chip"><span class="metric-chip-dot" style="background: #06b6d4;"></span><span data-i18n="proj_brief_m2">تحليل شجرة النحو AST</span></span>
+              <span class="metric-chip"><span class="metric-chip-dot" style="background: #f59e0b;"></span><span data-i18n="proj_brief_m3">جدولة تنافس الموارد</span></span>
+            </div>
             <div class="project-tags">
               <span class="tag-pill">PHP Core</span>
               <span class="tag-pill">AOP</span>
@@ -1189,31 +1365,28 @@
           </div>
         </div>
 
-        <!-- 6. Dream Shop -->
+        <!-- 7. Dream Shop -->
         <div class="project-card" data-category="backend platforms">
           <div class="project-header-bar">
             <span class="project-category-badge" data-i18n="proj_dream_cat">تجارة إلكترونية متعددة التجار</span>
-            <div class="project-icon-box">🛍️</div>
+            <div class="project-icon-box" style="background: rgba(244, 63, 94, 0.12); border-color: rgba(244, 63, 94, 0.26); color: #fb7185;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"></path>
+                <path d="M3 6h18"></path>
+                <path d="M16 10a4 4 0 0 1-8 0"></path>
+              </svg>
+            </div>
           </div>
           <div class="project-body">
             <h3 class="project-title" data-i18n="proj_dream_title">Dream Shop</h3>
             <p class="project-desc" data-i18n="proj_dream_desc">
               تطبيق متكامل للتجارة الإلكترونية يتيح لعدة بائعين إدارة منتجاتهم، مع سلة تسوق متطورة ونظام معالجة طلبات آمن.
             </p>
-            <ul class="project-bullets">
-              <li class="project-bullet-item">
-                <span class="project-bullet-dot">▸</span>
-                <span data-i18n="proj_dream_b1">هندسة واجهات RESTful APIs عالية الأداء لإدارة السلة والفلترة والطلبات والمدفوعات.</span>
-              </li>
-              <li class="project-bullet-item">
-                <span class="project-bullet-dot">▸</span>
-                <span data-i18n="proj_dream_b2">نظام مصادقة وتفويض دقيق يفصل بين صلاحيات المشترين والتجار ومديري النظام.</span>
-              </li>
-              <li class="project-bullet-item">
-                <span class="project-bullet-dot">▸</span>
-                <span data-i18n="proj_dream_b3">تصميم قاعدة بيانات علائقية متماسكة تحافظ على اتساق العمليات المالية والطلبات (Atomic Transactions).</span>
-              </li>
-            </ul>
+            <div class="project-metrics-strip">
+              <span class="metric-chip"><span class="metric-chip-dot" style="background: #fb7185;"></span><span data-i18n="proj_dream_m1">صلاحيات متعددة التجار</span></span>
+              <span class="metric-chip"><span class="metric-chip-dot" style="background: #10b981;"></span><span data-i18n="proj_dream_m2">حجز ذري للمخزون</span></span>
+              <span class="metric-chip"><span class="metric-chip-dot" style="background: #38bdf8;"></span><span data-i18n="proj_dream_m3">معاملات دفع آمنة</span></span>
+            </div>
             <div class="project-tags">
               <span class="tag-pill">Laravel</span>
               <span class="tag-pill">Multi-Vendor</span>
@@ -1232,31 +1405,28 @@
           </div>
         </div>
 
-        <!-- 7. Mosaic Recoding Syria (Reparametrize) -->
+        <!-- 8. Mosaic Recoding Syria (Reparametrize) -->
         <div class="project-card" data-category="research backend">
           <div class="project-header-bar">
-            <span class="project-category-badge" style="color: #34d399; background: rgba(16, 185, 129, 0.1);" data-i18n="proj_reparam_cat">الذكاء الاصطناعي والأبحاث</span>
-            <div class="project-icon-box" style="background: rgba(16, 185, 129, 0.1); color: #10b981;">🌐</div>
+            <span class="project-category-badge" style="color: #34d399; background: rgba(16, 185, 129, 0.1); border-color: rgba(16, 185, 129, 0.28);" data-i18n="proj_reparam_cat">الذكاء الاصطناعي والأبحاث</span>
+            <div class="project-icon-box" style="background: rgba(16, 185, 129, 0.12); border-color: rgba(16, 185, 129, 0.28); color: #34d399;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
+                <path d="M2 12h20"></path>
+              </svg>
+            </div>
           </div>
           <div class="project-body">
             <h3 class="project-title" data-i18n="proj_reparam_title">Mosaic Recoding Syria</h3>
             <p class="project-desc" data-i18n="proj_reparam_desc">
               مبادرة علمية مفتوحة المصدر من Reparametrize Foundation لتوظيف الذكاء الاصطناعي وتحليل البيانات في التخطيط الحضري لمرحلة ما بعد الأزمات.
             </p>
-            <ul class="project-bullets">
-              <li class="project-bullet-item">
-                <span class="project-bullet-dot" style="color: #10b981;">▸</span>
-                <span data-i18n="proj_reparam_b1">تطوير واجهات Laravel متقدمة تتكامل مع نماذج الذكاء الاصطناعي لتحليل البيانات الحضرية.</span>
-              </li>
-              <li class="project-bullet-item">
-                <span class="project-bullet-dot" style="color: #10b981;">▸</span>
-                <span data-i18n="proj_reparam_b2">المساهمة بأكثر من 208 ساعة بحثية والترقية السريعة لقيادة الفريق التقني.</span>
-              </li>
-              <li class="project-bullet-item">
-                <span class="project-bullet-dot" style="color: #10b981;">▸</span>
-                <span data-i18n="proj_reparam_b3">تقديم محاضرة علمية رسمية في مؤتمر إطلاق قاعدة البيانات المفتوحة بمشروع مسارات التعافي (Recovery Pathways).</span>
-              </li>
-            </ul>
+            <div class="project-metrics-strip">
+              <span class="metric-chip"><span class="metric-chip-dot" style="background: #10b981;"></span><span data-i18n="proj_reparam_m1">+208 ساعات بحثية</span></span>
+              <span class="metric-chip"><span class="metric-chip-dot" style="background: #06b6d4;"></span><span data-i18n="proj_reparam_m2">قنوات ذكاء اصطناعي</span></span>
+              <span class="metric-chip"><span class="metric-chip-dot" style="background: #a855f7;"></span><span data-i18n="proj_reparam_m3">قاعدة بيانات مفتوحة</span></span>
+            </div>
             <div class="project-tags">
               <span class="tag-pill" style="color: #34d399;">Laravel</span>
               <span class="tag-pill" style="color: #34d399;">AI Pipelines</span>
@@ -1417,9 +1587,23 @@
             </div>
             <div>
               <span class="channel-title">LinkedIn Profile</span>
-              <span class="channel-val block">linkedin.com/in/ward-alshaheen</span>
+              <span class="channel-val block" dir="ltr">linkedin.com/in/ward-alshaheen</span>
             </div>
-            <span class="text-xs text-slate-500 ml-auto" style="direction: ltr;">↗</span>
+            <span class="text-xs text-slate-500 ms-auto" style="direction: ltr;">↗</span>
+          </a>
+
+          <!-- GitHub Quick Action -->
+          <a href="https://github.com/Ward-Alshaheen" target="_blank" rel="noopener noreferrer" class="contact-channel-card">
+            <div class="contact-channel-icon bg-indigo-500/10 text-indigo-400">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+              </svg>
+            </div>
+            <div>
+              <span class="channel-title" data-i18n="contact_github_title">حساب GitHub والمشاريع</span>
+              <span class="channel-val block" dir="ltr">github.com/Ward-Alshaheen</span>
+            </div>
+            <span class="text-xs text-slate-500 ms-auto" style="direction: ltr;">↗</span>
           </a>
 
           <!-- Location -->
@@ -1499,6 +1683,13 @@
       </div>
 
       <div class="footer-socials">
+        <!-- GitHub -->
+        <a href="https://github.com/Ward-Alshaheen" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub (@Ward-Alshaheen)">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+          </svg>
+        </a>
+
         <!-- LinkedIn -->
         <a href="https://linkedin.com/in/ward-alshaheen" target="_blank" rel="noopener noreferrer" class="social-link" title="LinkedIn">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -1599,8 +1790,9 @@
           <!-- Rendered dynamically by renderProjectDetails() in app.js -->
         </div>
 
-        <div class="flex items-center justify-end pt-4 border-t border-slate-700/50">
-          <button class="btn-secondary !text-sm" id="closeProjBtnBottom" onclick="document.getElementById('projectModal').classList.remove('active'); document.body.style.overflow='';" data-i18n="modal_close">
+        <div class="flex items-center justify-between flex-wrap gap-3 pt-4 border-t border-slate-700/50">
+          <div id="projectModalFooterActions"></div>
+          <button class="btn-secondary !text-sm ms-auto" id="closeProjBtnBottom" onclick="document.getElementById('projectModal').classList.remove('active'); document.body.style.overflow='';" data-i18n="modal_close">
             إغلاق
           </button>
         </div>

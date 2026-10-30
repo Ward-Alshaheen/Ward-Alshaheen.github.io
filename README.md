@@ -50,14 +50,15 @@ The website presents a battle-tested technical skill set, detailed production ex
   - Interactive modal displaying the full letter (in both EN and AR) with direct download of the signed PDF ([`Recommendation_Letter_Ward Alshaheen_ReparametrizeFoundation.pdf`](./Recommendation_Letter_Ward%20Alshaheen_ReparametrizeFoundation.pdf)).
 
 - 💼 **Case-Study Architecture Modals**:
-  - Deep-dive modals for 7 flagship platforms and systems:
-    1. **Kozee**: Real estate application with spatial discovery, reels feed, and MySQL caching (HabApps).
-    2. **Nuhieh**: Hybrid electronic school LMS with multi-tier RBAC for 4 user personas.
-    3. **Care Me**: Telemedicine & clinic management with WebSockets live chat & GraphQL.
-    4. **AdVance**: Advertising marketplace with internal digital wallet and auditable double-entry ledger.
-    5. **BriefCode**: Low-code mobile dev engine with Aspect-Oriented Programming (AOP) & custom compiler mechanics.
-    6. **Dream Shop**: Multi-vendor e-commerce platform with inventory locks and atomic transactions.
-    7. **Mosaic Recoding Syria**: AI-driven open-source research platform for post-crisis urban recovery.
+  - Deep-dive modals for 8 flagship platforms and systems:
+    1. **Kozee** ([kozee-sy.com](https://kozee-sy.com/)): Real estate platform with geo-spatial map discovery, property video reels, Banner/Native Ads analytics, Spatie RBAC, and agent subscriptions (HabApps).
+    2. **CBHA Healthcare** ([cbha-sy.com](https://cbha-sy.com/)): Centralized NestJS, TypeScript, and Prisma ORM backend powering the CBHA mental & behavioral health portal and clinical dashboard with 47 granular PBAC permissions and 141 automated tests.
+    3. **Nuhieh**: Hybrid electronic school LMS with multi-tier RBAC for 4 user personas.
+    4. **Care Me**: Telemedicine & clinic management with WebSockets live chat & GraphQL.
+    5. **AdVance**: Advertising marketplace with internal digital wallet and auditable double-entry ledger.
+    6. **BriefCode**: Low-code mobile dev engine with Aspect-Oriented Programming (AOP) & custom compiler mechanics.
+    7. **Dream Shop**: Multi-vendor e-commerce platform with inventory locks and atomic transactions.
+    8. **Mosaic Recoding Syria**: AI-driven open-source research platform for post-crisis urban recovery.
 
 - 📄 **One-Click CV Download**:
   - Instant access to the latest curriculum vitae ([`ward alshaheen.pdf`](./ward%20alshaheen.pdf)).
@@ -74,10 +75,10 @@ The website presents a battle-tested technical skill set, detailed production ex
 
 | Domain | Technologies & Patterns |
 | :--- | :--- |
-| **Backend Core** | Laravel 11.x, PHP 8.2+, RESTful API Design, GraphQL, WebSockets |
-| **Architecture** | Clean Architecture, Repository Pattern, Façade Pattern, MVC, AOP, SOLID |
-| **Databases** | MySQL, Relational Database Modeling, Schema Optimization, Indexing, Firebase |
-| **DevOps & Tools**| Docker, CI/CD, Git, GitHub, Postman, Jira, Agile/Scrum |
+| **Backend Core** | Laravel 11.x, PHP 8.2+, NestJS 12, TypeScript, RESTful API Design, GraphQL, WebSockets |
+| **Architecture** | Clean Architecture, Repository Pattern, Façade Pattern, PBAC/RBAC, MVC, AOP, SOLID |
+| **Databases** | MySQL, Prisma ORM, PostgreSQL / SQLite, Relational Database Modeling, Indexing, Firebase |
+| **DevOps & Tools**| Docker, CI/CD, Git, GitHub, Swagger/OpenAPI, Postman, Vitest/PHPUnit, Jira, Agile/Scrum |
 | **Frontend UI** | Semantic HTML5, Modern CSS3, Glassmorphism, Tailwind CSS (CDN), Vanilla JS (ES6+) |
 
 ---

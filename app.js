@@ -24,13 +24,14 @@ const translations = {
     hero_desc: "Software Engineering graduate from Damascus University with mid-level expertise in Back-End development using Laravel. Passionate about building scalable, resilient, and secure applications. Dedicated to clean architecture and high-performance engineering standards to drive impactful business results.",
     hero_btn_projects: "Explore Projects",
     hero_btn_rec: "View Recommendation",
+    hero_btn_cv_preview: "Preview CV",
     hero_btn_cv: "Download CV",
     hero_btn_contact: "Get In Touch",
 
     // Stats
     stat_exp_val: "4+",
     stat_exp_lbl: "Years Engineering & Dev",
-    stat_proj_val: "7+",
+    stat_proj_val: "8+",
     stat_proj_lbl: "Production & Major Projects",
     stat_hours_val: "208+",
     stat_hours_lbl: "Scientific Volunteer Hours",
@@ -122,67 +123,77 @@ const translations = {
     proj_desc: "A curated selection of backend architectures, enterprise systems, and scientific applications I have designed and engineered.",
     filter_all: "All Projects",
     filter_backend: "Backend & APIs",
-    filter_platforms: "Platforms & EdTech",
+    filter_platforms: "Web Platforms & Portals",
     filter_realtime: "Real-time & FinTech",
     filter_research: "AI & Research",
 
     btn_view_details: "View Architecture & Details",
+    btn_visit_live: "Visit Website",
+    live_preview_cta: "Open Live Site ↗",
 
     // Project 1: Kozee
     proj_kozee_title: "Kozee",
-    proj_kozee_cat: "Enterprise & Mobile APIs",
-    proj_kozee_desc: "A comprehensive real estate ecosystem featuring smart geo-location map exploration, short-form video reels, and high-performance property query caching.",
-    proj_kozee_b1: "Designed and scaled RESTful APIs and database schemas for thousands of active properties.",
-    proj_kozee_b2: "Implemented map-based discovery algorithms and video reels feeds connecting owners with buyers.",
-    proj_kozee_b3: "Optimized MySQL indexing and managed server-side infrastructure.",
+    proj_kozee_cat: "Real Estate Ecosystem & APIs",
+    proj_kozee_desc: "A full-scale real estate platform featuring interactive map discovery, short-form property video reels, an integrated ads engine, agent subscription packages, and an admin dashboard.",
+    proj_kozee_m1: "Map + Video Reels",
+    proj_kozee_m2: "OTP + Spatie RBAC",
+    proj_kozee_m3: "Smart Ads & Packages",
+
+    // Project 1.5: CBHA Healthcare
+    proj_cbha_title: "CBHA — Cham Behavioral Health",
+    proj_cbha_cat: "HealthTech Portal & Admin API",
+    proj_cbha_desc: "Centralized production backend powering Cham Behavioral Health Associates (CBHA) and its clinical administration dashboard using NestJS, TypeScript, and Prisma ORM.",
+    proj_cbha_m1: "47 PBAC Permissions",
+    proj_cbha_m2: "15 Clinical Modules",
+    proj_cbha_m3: "141 Auto Tests (100%)",
 
     // Project 2: Nuhieh
     proj_nuhieh_title: "Nuhieh",
     proj_nuhieh_cat: "EdTech Platform",
     proj_nuhieh_desc: "Hybrid educational management platform synchronizing self-paced digital modules with in-classroom learning for administrators, teachers, parents, and students.",
-    proj_nuhieh_b1: "Architected multi-tier RBAC (Role-Based Access Control) supporting 4 distinct user personas.",
-    proj_nuhieh_b2: "Built robust class scheduling, automated grading matrices, and assignment workflows.",
-    proj_nuhieh_b3: "Followed Clean Architecture principles ensuring modularity and rapid test coverage.",
+    proj_nuhieh_m1: "4 Role Portals",
+    proj_nuhieh_m2: "Clash-Free Timetables",
+    proj_nuhieh_m3: "Clean Architecture",
 
     // Project 3: Dream Shop
     proj_dream_title: "Dream Shop",
     proj_dream_cat: "E-Commerce & Mobile",
     proj_dream_desc: "Scalable multi-user e-commerce mobile application platform empowering merchants to list, manage inventory, and sell products with secure order processing.",
-    proj_dream_b1: "Engineered high-performance RESTful APIs for shopping cart, catalog filtering, and multi-tier checkout.",
-    proj_dream_b2: "Implemented role-based permissions for buyers, vendors, and marketplace managers.",
-    proj_dream_b3: "Architected relational database with atomic transaction integrity.",
+    proj_dream_m1: "Multi-Vendor Roles",
+    proj_dream_m2: "Atomic Stock Locks",
+    proj_dream_m3: "Secure Checkout",
 
     // Project 4: Care Me
     proj_care_title: "Care Me",
     proj_care_cat: "Healthcare & Real-time",
     proj_care_desc: "Modern clinic management application featuring real-time patient-doctor communication, appointment booking, and GraphQL queries for flexible data fetching.",
-    proj_care_b1: "Built WebSocket real-time live chat and instantaneous push notifications.",
-    proj_care_b2: "Integrated GraphQL API endpoints alongside REST for flexible medical records retrieval.",
-    proj_care_b3: "Designed appointment calendar scheduling with conflict-prevention locking.",
+    proj_care_m1: "WebSocket Live Chat",
+    proj_care_m2: "GraphQL + REST APIs",
+    proj_care_m3: "Zero-Conflict Booking",
 
     // Project 5: AdVance
     proj_advance_title: "AdVance",
     proj_advance_cat: "FinTech & AdTech",
     proj_advance_desc: "Digital marketplace connecting advertisers looking to run campaigns with host applications seeking to monetize ad inventory.",
-    proj_advance_b1: "Architected digital wallet infrastructure handling internal credit transactions and balances.",
-    proj_advance_b2: "Designed an auditable double-entry ledger database for financial settlements.",
-    proj_advance_b3: "Implemented fraud prevention mechanisms and real-time impression analytics.",
+    proj_advance_m1: "Double-Entry Ledger",
+    proj_advance_m2: "Digital Wallet",
+    proj_advance_m3: "Anti-Fraud Analytics",
 
     // Project 6: BriefCode
     proj_brief_title: "BriefCode",
     proj_brief_cat: "System Architecture",
     proj_brief_desc: "Low-code application development platform designed for mobile software creation with aspect-oriented programming and compiler parsing mechanics.",
-    proj_brief_b1: "Applied Aspect-Oriented Programming (AOP) for clean separation of cross-cutting concerns.",
-    proj_brief_b2: "Implemented resource competition schedulers and custom AST compiler parsing algorithms.",
-    proj_brief_b3: "Utilized Advanced Design Patterns (Repository, Façade, Factory, Strategy).",
+    proj_brief_m1: "AOP Interceptors",
+    proj_brief_m2: "AST Compiler Parser",
+    proj_brief_m3: "Resource Scheduler",
 
     // Project 7: Mosaic Recoding Syria
     proj_reparam_title: "Mosaic Recoding Syria",
     proj_reparam_cat: "AI & Scientific Research",
     proj_reparam_desc: "Open-source scientific research initiative by Reparametrize Foundation utilizing AI-driven data processing for post-crisis smart city reconstruction.",
-    proj_reparam_b1: "Built scalable Laravel APIs integrating AI analysis pipelines on urban social and economic structures.",
-    proj_reparam_b2: "Contributed 208+ research hours leading to promotion as Senior Leader.",
-    proj_reparam_b3: "Presented lecture at official open-source database launch during Recovery Pathways event.",
+    proj_reparam_m1: "208+ R&D Hours",
+    proj_reparam_m2: "AI Urban Pipelines",
+    proj_reparam_m3: "Open Research DB",
 
     // References Section
     ref_tag: "Professional Endorsement",
@@ -205,6 +216,7 @@ const translations = {
     contact_desc: "Whether you need a senior Laravel backend engineer, system architecture consulting, or have a project in mind, I am ready to collaborate.",
     contact_email_title: "Direct Email",
     contact_phone_title: "Phone & WhatsApp",
+    contact_github_title: "GitHub & Repositories",
     contact_loc_title: "Location",
     contact_loc_val: "Damascus, Syria",
     contact_copy_btn: "Copy",
@@ -258,13 +270,14 @@ const translations = {
     hero_desc: "مهندس برمجيات متخرج من جامعة دمشق، متخصص في تطوير الأنظمة الخلفية (Backend) وهندسة البنى التحتية البرمجية باستخدام Laravel. شغوف ببناء تطبيقات عالية الأداء، قابلة للتوسع، ومحمية بأعلى معايير الأمان. ملتزم بنهج المعمارية النظيفة (Clean Architecture) ومبادئ SOLID لتقديم كود هندسي موثوق يحقق أهداف الأعمال بدقة.",
     hero_btn_projects: "استعراض المشاريع",
     hero_btn_rec: "عرض خطاب التوصية",
-    hero_btn_cv: "تحميل السيرة الذاتية (CV)",
+    hero_btn_cv_preview: "معاينة الـ CV",
+    hero_btn_cv: "تحميل الـ CV",
     hero_btn_contact: "تواصل معي مباشرة",
 
     // Stats
     stat_exp_val: "+4",
     stat_exp_lbl: "سنوات في هندسة وتطوير البرمجيات",
-    stat_proj_val: "+7",
+    stat_proj_val: "+8",
     stat_proj_lbl: "مشاريع وأنظمة برمجية متكاملة",
     stat_hours_val: "+208",
     stat_hours_lbl: "ساعة بحث وتطوير علمي تطوعي",
@@ -356,67 +369,77 @@ const translations = {
     proj_desc: "مختارات من البنى التحتية البرمجية والأنظمة المتكاملة التي صممتها ونفذتها وفق أعلى المعايير الهندسية.",
     filter_all: "كافة المشاريع",
     filter_backend: "الأنظمة الخلفية و APIs",
-    filter_platforms: "المنصات والتعليم",
+    filter_platforms: "المنصات والأنظمة المتكاملة",
     filter_realtime: "الزمن الحقيقي والمالية",
     filter_research: "الذكاء الاصطناعي والأبحاث",
 
     btn_view_details: "عرض التفاصيل والمعمارية البرمجية",
+    btn_visit_live: "زيارة الموقع",
+    live_preview_cta: "فتح الموقع الحي ↗",
 
     // Project 1: Kozee
     proj_kozee_title: "Kozee",
-    proj_kozee_cat: "تطبيقات مؤسسية وواجهات APIs",
-    proj_kozee_desc: "منصة عقارية متكاملة تتيح استكشاف العقارات عبر الخرائط التفاعلية الذكية، وفيديوهات الريلز القصيرة، ونظام Caching متطور لسرعة الاستعلامات.",
-    proj_kozee_b1: "تصميم وهندسة واجهات RESTful APIs وقواعد بيانات تخدم آلاف العقارات والوسطاء.",
-    proj_kozee_b2: "تطوير خوارزميات الاستكشاف الجغرافي ونظام الريلز لربط أصحاب العقارات والعملاء.",
-    proj_kozee_b3: "تحسين فهارس MySQL وإدارة بنية الخوادم لضمان أداء مستقر وعالي الموثوقية.",
+    proj_kozee_cat: "منصة عقارية متكاملة وواجهات APIs",
+    proj_kozee_desc: "منصة عقارية متكاملة تتيح استكشاف العقارات عبر الخرائط التفاعلية، وفيديوهات الريلز القصيرة، مع محرك إعلانات ونظام باقات واشتراكات ولوحة تحكم شاملة.",
+    proj_kozee_m1: "خرائط تفاعلية + ريلز",
+    proj_kozee_m2: "مصادقة OTP + Spatie RBAC",
+    proj_kozee_m3: "محرك إعلانات وباقات",
+
+    // Project 1.5: CBHA Healthcare
+    proj_cbha_title: "CBHA — عيادة شام للصحة السلوكية",
+    proj_cbha_cat: "المنصات الطبية ولوحات التحكم (HealthTech)",
+    proj_cbha_desc: "النظام الخلفي المركزي لمنصة عيادة شام للصحة السلوكية (CBHA) ولوحة الإدارة السريرية، مبني باستخدام NestJS و TypeScript و Prisma ORM.",
+    proj_cbha_m1: "47 صلاحية PBAC دقيقة",
+    proj_cbha_m2: "15 وحدة سريرية وإدارية",
+    proj_cbha_m3: "141 اختباراً آلياً (100%)",
 
     // Project 2: Nuhieh
     proj_nuhieh_title: "Nuhieh",
     proj_nuhieh_cat: "تكنولوجيا التعليم (EdTech Platform)",
     proj_nuhieh_desc: "منصة تعليمية هجينة توفق بين التعلم الذاتي الرقمي والتعليم الصفي المباشر، وتخدم 4 فئات: الإدارة، المعلمين، الأهالي، والطلاب.",
-    proj_nuhieh_b1: "هندسة نظام أذونات وصلاحيات متعدد المستويات (RBAC) يخدم 4 فئات مستخدمين بأمان تام.",
-    proj_nuhieh_b2: "بناء أدوات الجداول الدراسية التفاعلية، حساب الدرجات الآلي، ونظام رفع الواجبات.",
-    proj_nuhieh_b3: "تطبيق المعمارية النظيفة (Clean Architecture) لضمان سهولة الفحص والاختبارات والتوسع المستقبلي.",
+    proj_nuhieh_m1: "4 بوابات صلاحيات",
+    proj_nuhieh_m2: "منع تعارض الجداول",
+    proj_nuhieh_m3: "معمارية Clean نظيفة",
 
     // Project 3: Dream Shop
     proj_dream_title: "Dream Shop",
     proj_dream_cat: "تجارة إلكترونية متعددة التجار",
     proj_dream_desc: "تطبيق متكامل للتجارة الإلكترونية يتيح لعدة بائعين إدارة منتجاتهم، مع سلة تسوق متطورة ونظام معالجة طلبات آمن.",
-    proj_dream_b1: "هندسة واجهات RESTful APIs عالية الأداء لإدارة السلة والفلترة والطلبات والمدفوعات.",
-    proj_dream_b2: "نظام مصادقة وتفويض دقيق يفصل بين صلاحيات المشترين والتجار ومديري النظام.",
-    proj_dream_b3: "تصميم قاعدة بيانات علائقية متماسكة تحافظ على اتساق العمليات المالية والطلبات (Atomic Transactions).",
+    proj_dream_m1: "صلاحيات متعددة التجار",
+    proj_dream_m2: "حجز ذري للمخزون",
+    proj_dream_m3: "معاملات دفع آمنة",
 
     // Project 4: Care Me
     proj_care_title: "Care Me",
     proj_care_cat: "الرعاية الصحية والاتصال اللحظي",
     proj_care_desc: "تطبيق ذكي لإدارة العيادات والمراكز الطبية يتيح التواصل اللحظي بين الطبيب والمريض، حجز المواعيد، وواجهة استعلام مرنة عبر GraphQL.",
-    proj_care_b1: "محادثة فورية مباشرة عبر WebSockets وإشعارات لحظية للرسائل والمواعيد.",
-    proj_care_b2: "دمج واجهات GraphQL بجانب REST لتوفير استعلامات مرنة وسريعة للسجلات الطبية.",
-    proj_care_b3: "نظام جدولة مواعيد دقيق يمنع التعارض ويدير أوقات الكشف بسلاسة عبر تقنيات القفل (Locking).",
+    proj_care_m1: "محادثة WebSocket فورية",
+    proj_care_m2: "استعلامات GraphQL مرنة",
+    proj_care_m3: "قفل ذري للمواعيد",
 
     // Project 5: AdVance
     proj_advance_title: "AdVance",
     proj_advance_cat: "التكنولوجيا المالية والإعلانية (FinTech & AdTech)",
     proj_advance_desc: "سوق رقمي يربط بين المعلنين الراغبين بنشر حملاتهم والتطبيقات المستضيفة الساعية لتحقيق عوائد من عرض الإعلانات.",
-    proj_advance_b1: "بناء بنية محفظة رقمية متكاملة لإدارة الأرصدة والتحويلات المالية داخل المنصة.",
-    proj_advance_b2: "تصميم سجل محاسبي بالقيد المزدوج (Double-Entry Ledger) غير قابل للتلاعب لضمان سلامة العمليات.",
-    proj_advance_b3: "تحليل المشاهدات في الوقت الفعلي وتطبيق أنظمة كشف ومنع التلاعب والنقرات الوهمية.",
+    proj_advance_m1: "سجل محاسبي مزدوج",
+    proj_advance_m2: "محفظة مالية رقمية",
+    proj_advance_m3: "مكافحة النقرات الوهمية",
 
     // Project 6: BriefCode
     proj_brief_title: "BriefCode",
     proj_brief_cat: "معمارية الأنظمة والمترجمات",
     proj_brief_desc: "بيئة تطوير برمجيات منخفضة الكود (Low-Code) لتطبيقات الهواتف تعتمد على البرمجة موجهة الجوانب (AOP) وتقنيات المترجمات.",
-    proj_brief_b1: "تطبيق البرمجة موجهة الجوانب (AOP) لفصل الاهتمامات المشتركة عبر النظام بنظافة.",
-    proj_brief_b2: "خوارزميات إدارة التنافس على الموارد وتحليل شجرة النحو المجردة (AST Parsing).",
-    proj_brief_b3: "توظيف أنماط التصميم المتقدمة (Repository, Façade, Factory, Strategy).",
+    proj_brief_m1: "فصل الجوانب AOP",
+    proj_brief_m2: "تحليل شجرة النحو AST",
+    proj_brief_m3: "جدولة تنافس الموارد",
 
     // Project 7: Mosaic Recoding Syria
     proj_reparam_title: "Mosaic Recoding Syria",
     proj_reparam_cat: "الذكاء الاصطناعي والأبحاث",
     proj_reparam_desc: "مبادرة علمية مفتوحة المصدر من Reparametrize Foundation لتوظيف الذكاء الاصطناعي وتحليل البيانات في التخطيط الحضري لمرحلة ما بعد الأزمات.",
-    proj_reparam_b1: "تطوير واجهات Laravel متقدمة تتكامل مع نماذج الذكاء الاصطناعي لتحليل البيانات الحضرية.",
-    proj_reparam_b2: "المساهمة بأكثر من 208 ساعة بحثية والترقية السريعة لقيادة الفريق التقني.",
-    proj_reparam_b3: "تقديم محاضرة علمية رسمية في مؤتمر إطلاق قاعدة البيانات المفتوحة بمشروع مسارات التعافي (Recovery Pathways).",
+    proj_reparam_m1: "+208 ساعات بحثية",
+    proj_reparam_m2: "قنوات ذكاء اصطناعي",
+    proj_reparam_m3: "قاعدة بيانات مفتوحة",
 
     // References Section
     ref_tag: "المعرّفون المهنيون",
@@ -439,6 +462,7 @@ const translations = {
     contact_desc: "سواء كنت تبحث عن مهندس أنظمة خلفية متمرس في Laravel، أو استشارة في المعمارية البرمجية، يسعدني دائماً التواصل والتعاون معك.",
     contact_email_title: "البريد الإلكتروني",
     contact_phone_title: "الهاتف والواتساب",
+    contact_github_title: "حساب GitHub والمشاريع",
     contact_loc_title: "الموقع",
     contact_loc_val: "دمشق، سوريا (جرمانا)",
     contact_copy_btn: "نسخ",
@@ -518,6 +542,7 @@ const recommendationLetterData = {
 // Application State
 let currentLang = localStorage.getItem('ward_portfolio_lang') || 'ar';
 let activeLetterLang = 'ar';
+let activeProjectKey = null;
 
 // Document Ready Initialization
 document.addEventListener('DOMContentLoaded', () => {
@@ -577,6 +602,12 @@ function initLanguage(lang) {
   // Update modal letter if open
   activeLetterLang = lang;
   renderRecommendationLetter(activeLetterLang);
+
+  // Update project details modal if open
+  const projectModal = document.getElementById('projectModal');
+  if (activeProjectKey && projectModal && projectModal.classList.contains('active')) {
+    renderProjectDetails(activeProjectKey);
+  }
 }
 
 // Lang toggle button click listener
@@ -590,8 +621,9 @@ if (langToggleBtn) {
 
 // Project Filtering Logic
 function initProjectFilters() {
-  const filterBtns = document.querySelectorAll('.filter-btn');
+  const filterBtns = document.querySelectorAll('.filter-tabs .filter-btn');
   const projectCards = document.querySelectorAll('.project-card');
+  const projectsContainer = document.getElementById('projectsContainer');
 
   filterBtns.forEach(btn => {
     btn.addEventListener('click', () => {
@@ -599,21 +631,25 @@ function initProjectFilters() {
       btn.classList.add('active');
 
       const filterVal = btn.getAttribute('data-filter');
+      if (projectsContainer) {
+        projectsContainer.classList.toggle('is-filtered', filterVal !== 'all');
+      }
 
       projectCards.forEach(card => {
+        if (card._filterTimer) clearTimeout(card._filterTimer);
         const categories = card.getAttribute('data-category') || '';
         if (filterVal === 'all' || categories.includes(filterVal)) {
           card.style.display = 'flex';
-          setTimeout(() => {
+          card._filterTimer = setTimeout(() => {
             card.style.opacity = '1';
             card.style.transform = 'translateY(0)';
-          }, 50);
+          }, 30);
         } else {
           card.style.opacity = '0';
-          card.style.transform = 'translateY(20px)';
-          setTimeout(() => {
+          card.style.transform = 'translateY(16px)';
+          card._filterTimer = setTimeout(() => {
             card.style.display = 'none';
-          }, 250);
+          }, 220);
         }
       });
     });
@@ -748,44 +784,137 @@ function renderRecommendationLetter(lang) {
 // Project Details Modal Deep Dive
 const projectDetailsData = {
   kozee: {
+    liveUrl: "https://kozee-sy.com/",
+    liveDomain: "kozee-sy.com",
     en: {
-      title: "Kozee",
-      badge: "Production Backend & Lead Infrastructure",
-      summary: "High-performance property discovery application engineered for HabApps, catering to thousands of active buyers and property agencies.",
-      techStack: ["Laravel", "MySQL", "RESTful APIs", "Geo-Spatial Queries", "Video Streaming Backend", "Ubuntu / Nginx"],
+      title: "Kozee — Real Estate Ecosystem",
+      badge: "Live Production Platform & Lead Backend Architecture",
+      summary: "Comprehensive real estate ecosystem (kozee-sy.com & mobile apps) engineered for HabApps, connecting property seekers with verified real estate agents through geo-spatial map discovery, property video reels, smart ads, and subscription packages.",
+      kpis: [
+        { val: "3 Clients", lbl: "Mobile Apps, Web & Admin Dashboard" },
+        { val: "Map + Reels", lbl: "Geo-Spatial Discovery & Short Video Feed" },
+        { val: "RBAC + OTP", lbl: "Sanctum Phone Auth & Spatie Permissions" }
+      ],
+      architecture: [
+        { step: "01 • Clients", title: "Mobile, Web & Admin", sub: "iOS/Android, kozee-sy.com & Dashboard" },
+        { step: "02 • Security", title: "Sanctum OTP & RBAC", sub: "Phone OTP + Spatie Multi-Role Guards" },
+        { step: "03 • Core Engine", title: "Laravel 11 Domain", sub: "Geo-Map, Video Reels, Ads & Packages" },
+        { step: "04 • Data & Infra", title: "MySQL + Supervisor", sub: "Spatial Indexes, Queues & Docker" }
+      ],
+      techStack: ["Laravel 11", "PHP 8.2+", "MySQL", "Sanctum OTP Auth", "Spatie RBAC", "Geo-Spatial Map Queries", "Video Reels Feed", "Queues & Supervisor", "Docker"],
       challenges: [
-        "Handling spatial map queries with millisecond response times under heavy concurrent filtering.",
-        "Managing video reel assets, streaming bandwidth, and thumbnail generation pipeline.",
-        "Implementing a role-based CMS for real estate agents with granular permissions."
+        "Handling spatial map discovery queries, saved search alerts, and complex property workflow states (approval, pause, sold, rented) at low latency.",
+        "Delivering an Instagram-style property video reels feed alongside Banner & Native Ads with accurate click/impression analytics.",
+        "Enforcing granular multi-role permissions across admins (Super Admin, Moderator, Sales) and customizable agent subscription packages."
       ],
       solutions: [
-        "Implemented indexed bounding-box geo-caching in MySQL and Redis for instantaneous map viewport updates.",
-        "Engineered chunked video upload pipelines with optimized background processing and delivery.",
-        "Designed clean repository pattern architectures separating persistence from business domain logic."
+        "Engineered optimized MySQL indexing and spatial map endpoints with OTP phone verification via Laravel Sanctum.",
+        "Built dedicated Banner & Native Ad analytics pipelines and background job queues managed by Supervisor inside Docker.",
+        "Implemented Spatie Laravel-Permission RBAC and dynamic package-level capability controls across the Admin Dashboard."
       ]
     },
     ar: {
-      title: "Kozee",
-      badge: "الأنظمة الخلفية الرئيسية وإدارة السيرفرات في HabApps",
-      summary: "تطبيق عقاري عالي الأداء مصمم ومطور لخدمة آلاف المستخدمين والوسطاء والوكالات العقارية في HabApps.",
-      techStack: ["Laravel", "MySQL", "RESTful APIs", "Geo-Spatial Queries", "Video Streaming Backend", "Ubuntu / Nginx"],
+      title: "Kozee — منظومة عقارية متكاملة",
+      badge: "منصة عقارية إنتاجية حية وقيادة الأنظمة الخلفية في HabApps",
+      summary: "منصة عقارية متكاملة (kozee\u2011sy.com وتطبيقات الهواتف ولوحة الإدارة) مصممة لربط الباحثين عن العقارات والوسطاء عبر الخرائط التفاعلية، وفيديوهات الريلز العقارية، ومحرك الإعلانات والباقات.",
+      kpis: [
+        { val: "3 واجهات", lbl: "تطبيقات الموبايل والموقع ولوحة الإدارة" },
+        { val: "Map + Reels", lbl: "استكشاف جغرافي وموجز ريلز عقاري" },
+        { val: "RBAC + OTP", lbl: "مصادقة Sanctum الهاتفية وصلاحيات Spatie" }
+      ],
+      architecture: [
+        { step: "01 • الواجهات", title: "الموبايل والويب والإدارة", sub: "تطبيقات الهاتف و kozee\u2011sy.com" },
+        { step: "02 • الحماية", title: "Sanctum OTP & RBAC", sub: "تحقق هاتفي وصلاحيات متعددة الأدوار" },
+        { step: "03 • المحرك الخلفي", title: "Laravel 11 Services", sub: "الخرائط، الريلز، الإعلانات والباقات" },
+        { step: "04 • البنية التحتية", title: "MySQL + Supervisor", sub: "فهارس مكانية وطوابير مهام ببيئة Docker" }
+      ],
+      techStack: ["Laravel 11", "PHP 8.2+", "MySQL", "Sanctum OTP Auth", "Spatie RBAC", "Geo-Spatial Map Queries", "Video Reels Feed", "Queues & Supervisor", "Docker"],
       challenges: [
-        "معالجة الاستعلامات الجغرافية والخرائط في أجزاء من الثانية مع فلاتر متعددة وضغط متزامن.",
-        "إدارة تدفق فيديوهات الريلز العقارية وتحسين استهلاك الباندويث وإنشاء الصور المصغرة.",
-        "بناء لوحة تحكم وصلاحيات دقيقة للوسطاء وأصحاب العقارات مع حماية البيانات."
+        "معالجة استعلامات الخرائط الجغرافية وعمليات البحث المحفوظة ودورة حياة العقار الكاملة (مراجعة، تجميد، بيع، تأجير) بزمن استجابة فائق.",
+        "تشغيل موجز فيديوهات الريلز العقارية بالتوازي مع محرك إعلانات (Banner & Native Ads) يتتبع النقرات والمشاهدات بدقة.",
+        "توزيع الصلاحيات الإدارية الدقيقة وتخصيص باقات اشتراك متعددة المستويات للوسطاء العقاريين."
       ],
       solutions: [
-        "بناء خوارزميات فهارس جغرافية Bounding-Box مع تخزين مؤقت (Caching) لسرعة استجابة فائقة.",
-        "تطوير مسار رفع الفيديوهات المجزأ وعمليات المعالجة الخلفية لضمان تجربة تصفح سلسة.",
-        "تطبيق نمط المستودع (Repository Pattern) لفصل منطق العمل عن قواعد البيانات وتسهيل الصيانة."
+        "هندسة فهارس MySQL محسنة ومسارات استكشاف جغرافي سريعة مع نظام تسجيل وتحقق آمن عبر رمز OTP و Laravel Sanctum.",
+        "بناء محرك تحليلات إعلانية متكامل ومعالجة المهام الخلفية عبر Laravel Queues و Supervisor ضمن حاويات Docker.",
+        "تطبيق نظام صلاحيات متقدم عبر Spatie RBAC مع ربط ديناميكي لصلاحيات كل باقة اشتراك من لوحة التحكم الإدارية."
+      ]
+    }
+  },
+  cbha: {
+    liveUrl: "https://cbha-sy.com/",
+    liveDomain: "cbha-sy.com",
+    en: {
+      title: "CBHA — Cham Behavioral Health Associates",
+      badge: "Live Healthcare Portal & Clinical Admin Backend",
+      summary: "Production-grade centralized RESTful API built with NestJS, TypeScript, and Prisma ORM, powering both the public mental & behavioral healthcare portal (cbha-sy.com) and the clinical administration dashboard (dash.cbha-sy.com).",
+      kpis: [
+        { val: "47 Perms", lbl: "Granular PBAC Across 15 Clinical Modules" },
+        { val: "141 Tests", lbl: "76 Unit + 65 E2E Tests (100% Pass Rate)" },
+        { val: "19 Cases", lbl: "Bilingual Clinical Catalogs & WebP Media" }
+      ],
+      architecture: [
+        { step: "01 • Portals", title: "Public Web & Admin Dash", sub: "cbha-sy.com & dash.cbha-sy.com" },
+        { step: "02 • Security", title: "Passport JWT + PBAC", sub: "Custom PermissionsGuard (47 Perms)" },
+        { step: "03 • Core API", title: "NestJS 12 (15 Modules)", sub: "Doctors, Cases, Inbox & Sharp WebP" },
+        { step: "04 • Persistence", title: "Prisma ORM & Docker", sub: "PostgreSQL / Non-Destructive Seeding" }
+      ],
+      techStack: ["NestJS 12", "TypeScript 5+", "Prisma ORM", "JWT & Passport", "PBAC (47 Permissions)", "Sharp WebP", "Swagger / OpenAPI", "Vitest & Supertest", "Docker"],
+      challenges: [
+        "Enforcing strict security isolation across 15 clinical and CMS modules for managers, specialist doctors, receptionists, and custom roles.",
+        "Synchronizing bilingual medical content (19 specialized psychological/behavioral cases, doctor availability states, patient inbox, blog & FAQs) with fast media delivery.",
+        "Guaranteeing zero data loss or accidental overwrites during automated container redeployments while maintaining full API reliability."
+      ],
+      solutions: [
+        "Architected a custom PermissionsGuard and @RequirePermissions decorator enforcing 47 granular permissions with instant team activation.",
+        "Integrated automated Sharp WebP image optimization pipelines, standardized response envelopes, and interactive Swagger + Postman documentation.",
+        "Engineered non-destructive Docker entrypoint seeding and achieved a 100% pass rate across 76 Unit Tests and 65 E2E Integration Tests."
+      ]
+    },
+    ar: {
+      title: "CBHA — عيادة شام للصحة السلوكية",
+      badge: "منصة رعاية صحية حية ونظام إدارة سريرية متكامل",
+      summary: "نظام خلفي مركزي عالي الاعتمادية مبني بإطار NestJS و TypeScript و Prisma ORM، يغذي كلاً من البوابة الطبية العامة (cbha\u2011sy.com) ولوحة الإدارة السريرية (dash.cbha\u2011sy.com).",
+      kpis: [
+        { val: "47 صلاحية", lbl: "نظام PBAC دقيق عبر 15 وحدة برمجية" },
+        { val: "141 اختباراً", lbl: "76 وحدة + 65 تكامل E2E بنجاح 100%" },
+        { val: "19 تخصصاً", lbl: "محتوى سريري ثنائي اللغة وضغط WebP" }
+      ],
+      architecture: [
+        { step: "01 • البوابات", title: "البوابة العامة ولوحة الإدارة", sub: "cbha\u2011sy.com و dash.cbha\u2011sy.com" },
+        { step: "02 • الأمان", title: "Passport JWT + PBAC", sub: "حارس PermissionsGuard لـ 47 صلاحية" },
+        { step: "03 • النواة", title: "NestJS 12 (15 وحدة)", sub: "الأطباء، الحالات، الرسائل وضغط Sharp" },
+        { step: "04 • البيانات", title: "Prisma ORM & Docker", sub: "بذور آمنة غير تدميرية للبيانات الإنتاجية" }
+      ],
+      techStack: ["NestJS 12", "TypeScript 5+", "Prisma ORM", "JWT & Passport", "PBAC (47 Permissions)", "Sharp WebP", "Swagger / OpenAPI", "Vitest & Supertest", "Docker"],
+      challenges: [
+        "تطبيق عزل أمني صارم للصلاحيات عبر 15 وحدة برمجية طبية وإدارية تشمل المديرين والأطباء الاختصاصيين والاستقبال والأدوار المخصصة.",
+        "إدارة المحتوى الطبي ثنائي اللغة (19 حالة نفسية وسلوكية تخصصية، حالات توفر الأطباء، صندوق محادثات المرضى، والمدونة الطبية) بأداء عالٍ.",
+        "ضمان الحماية التامة للبيانات الإنتاجية ومنع استبدالها عند إعادة نشر حاويات Docker مع التحقق الآلي الشامل من كافة المسارات."
+      ],
+      solutions: [
+        "بناء حارس الصلاحيات PermissionsGuard والزخرف @RequirePermissions لتدقيق 47 صلاحية مستقلة مع نظام دعوة وتفعيل فوري للفريق.",
+        "دمج خط معالجة وضغط تلقائي للصور بصيغة WebP عبر مكتبة Sharp، مع توثيق تفاعلي كامل عبر Swagger ومجموعات Postman المؤتمتة.",
+        "تطوير معمارية بذور غير تدميرية (Non-Destructive Docker Seeding) وتحقيق نسبة نجاح 100% عبر 76 اختبار وحدة و65 اختبار تكامل (E2E)."
       ]
     }
   },
   nuhieh: {
     en: {
-      title: "Nuhieh",
+      title: "Nuhieh — Hybrid EdTech Platform",
       badge: "Full-Stack Backend & Architecture Lead",
       summary: "Next-generation electronic hybrid school platform bridging self-paced digital learning with direct classroom participation.",
+      kpis: [
+        { val: "4 Portals", lbl: "Admins, Teachers, Parents & Students" },
+        { val: "0 Clashes", lbl: "Automated Timetable Conflict Matrix" },
+        { val: "100% Modular", lbl: "Clean Service-Oriented Architecture" }
+      ],
+      architecture: [
+        { step: "01 • Actors", title: "4 Role Portals", sub: "Admin, Teacher, Parent & Student UIs" },
+        { step: "02 • Access", title: "Multi-Tier RBAC", sub: "Endpoint & Resource Policy Guards" },
+        { step: "03 • Domain", title: "Clean Service Layer", sub: "Timetables, Grading & Assignments" },
+        { step: "04 • Storage", title: "Normalized MySQL", sub: "Academic Terms & Attendance Logs" }
+      ],
       techStack: ["Laravel", "Clean Architecture", "RBAC", "MySQL", "RESTful APIs", "Automated Assessments"],
       challenges: [
         "Unifying 4 complex user journeys (Admins, Teachers, Parents, and Students) in a cohesive, modular backend.",
@@ -799,14 +928,25 @@ const projectDetailsData = {
       ]
     },
     ar: {
-      title: "Nuhieh",
+      title: "Nuhieh — منصة التعليم الهجين",
       badge: "قيادة المعمارية وتطوير الأنظمة الخلفية بالكامل",
       summary: "منصة مدرسية إلكترونية هجينة تربط بين التعليم الذاتي والرقمي والتعليم التفاعلي داخل الفصول، مع لوحات تحكم متخصصة.",
+      kpis: [
+        { val: "4 بوابات", lbl: "الإدارة، المعلمون، الأهالي والطلاب" },
+        { val: "0 تعارض", lbl: "خوارزمية ذكية لمنع تضارب الحصص" },
+        { val: "Clean Arch", lbl: "فصل كامل لطبقات الخدمات والبيانات" }
+      ],
+      architecture: [
+        { step: "01 • المستخدمون", title: "4 واجهات متخصصة", sub: "إدارة، معلمون، أولياء أمور وطلاب" },
+        { step: "02 • الصلاحيات", title: "Multi-Tier RBAC", sub: "تدقيق الصلاحيات لكل مسار ومورد" },
+        { step: "03 • منطق العمل", title: "طبقة خدمات نظيفة", sub: "الجداول، الدرجات الآلية والواجبات" },
+        { step: "04 • التخزين", title: "قاعدة بيانات MySQL", sub: "سجلات الفصول الأكاديمية والحضور" }
+      ],
       techStack: ["Laravel", "Clean Architecture", "RBAC", "MySQL", "RESTful APIs", "Automated Assessments"],
       challenges: [
         "توحيد مسارات العمل لأربع فئات مختلفة (الإدارة، المعلمون، أولياء الأمور، والطلاب) في نظام متماسك.",
         "أتمتة خوارزميات الجداول الدراسية لمنع التعارض الزمني بين المدرسين والقاعات الصفية.",
-        "توفير بيئة آمنة وعالية الموثوقية لحفظ السجلات الأكاديمية والواجبات ورصد الحضور اليومي.",
+        "توفير بيئة آمنة وعالية الموثوقية لحفظ السجلات الأكاديمية والواجبات ورصد الحضور اليومي."
       ],
       solutions: [
         "تصميم نظام تحكم بالصلاحيات (RBAC Middleware) يفحص الأذونات بدقة فائقة لكل مسار.",
@@ -817,9 +957,20 @@ const projectDetailsData = {
   },
   care: {
     en: {
-      title: "Care Me",
+      title: "Care Me — Real-Time Clinic Suite",
       badge: "Real-time WebSockets & GraphQL Integration",
       summary: "Medical clinic automation platform offering real-time patient-doctor telemedicine, instant messaging, and automated bookings.",
+      kpis: [
+        { val: "Real-Time", lbl: "Bidirectional WebSocket Chat & Alerts" },
+        { val: "GraphQL + REST", lbl: "Zero Over-Fetching for Clinical Charts" },
+        { val: "ACID Locks", lbl: "Pessimistic Slot Locking for Bookings" }
+      ],
+      architecture: [
+        { step: "01 • Clients", title: "Doctor & Patient Apps", sub: "Telemedicine & Booking Interfaces" },
+        { step: "02 • API Gateway", title: "GraphQL + REST", sub: "Flexible Schema & Auth Guards" },
+        { step: "03 • Live Layer", title: "WebSocket Channels", sub: "Instant Chat, Presence & Push Alerts" },
+        { step: "04 • Data Layer", title: "MySQL Row Locks", sub: "Pessimistic Locking on Time Slots" }
+      ],
       techStack: ["Laravel", "GraphQL", "WebSockets / Pusher", "MySQL", "Push Notifications", "Clean Architecture"],
       challenges: [
         "Achieving real-time bidirectional communication between patients and medical staff with low latency.",
@@ -833,9 +984,20 @@ const projectDetailsData = {
       ]
     },
     ar: {
-      title: "Care Me",
+      title: "Care Me — منظومة العيادات الذكية",
       badge: "الاتصال اللحظي WebSockets وواجهات GraphQL",
       summary: "منصة متطورة لأتمتة العيادات والمراكز الطبية، توفر محادثات فورية بين المرضى والأطباء، حجز المواعيد، واستعلامات مرنة للسجلات.",
+      kpis: [
+        { val: "اتصال لحظي", lbl: "محادثة فورية وتنبيهات عبر WebSockets" },
+        { val: "GraphQL + REST", lbl: "جلب الحقول الطبية المطلوبة دون هدر" },
+        { val: "قفل ذري", lbl: "منع ازدواج الحجوزات في أوقات الذروة" }
+      ],
+      architecture: [
+        { step: "01 • التطبيقات", title: "واجهات الطبيب والمريض", sub: "الاستشارات الفورية وحجز المواعيد" },
+        { step: "02 • بوابة البيانات", title: "GraphQL + REST", sub: "استعلامات مرنة ومصادقة محمية" },
+        { step: "03 • الزمن الحقيقي", title: "قنوات WebSockets", sub: "دردشة مباشرة، حالات اتصال وإشعارات" },
+        { step: "04 • قاعدة البيانات", title: "MySQL Pessimistic Lock", sub: "قفل ذري لفترات الحجز لمنع التعارض" }
+      ],
       techStack: ["Laravel", "GraphQL", "WebSockets / Pusher", "MySQL", "Push Notifications", "Clean Architecture"],
       challenges: [
         "تأمين اتصال فوري لحظي ثنائي الاتجاه بين المرضى والكوادر الطبية بأقل زمن استجابة ممكن.",
@@ -851,9 +1013,20 @@ const projectDetailsData = {
   },
   advance: {
     en: {
-      title: "AdVance",
+      title: "AdVance — FinTech & AdTech Marketplace",
       badge: "FinTech Ledger & In-App Digital Wallet",
       summary: "High-scale marketplace enabling advertisers to launch ad campaigns while host applications monetize their digital inventory.",
+      kpis: [
+        { val: "Double-Entry", lbl: "Immutable Financial Ledger Integrity" },
+        { val: "Anti-Fraud", lbl: "Bot Click & Impression Filtering" },
+        { val: "Real-Time ROI", lbl: "Aggregated Campaign Spend & Payouts" }
+      ],
+      architecture: [
+        { step: "01 • Traffic", title: "SDK & Ad Requests", sub: "Host Apps & Advertiser Dashboards" },
+        { step: "02 • Shield", title: "Anti-Fraud Engine", sub: "Rate-Limiting & Device Fingerprinting" },
+        { step: "03 • FinTech Core", title: "Wallet & Settlement", sub: "Atomic Credit Reservations & Payouts" },
+        { step: "04 • Ledger DB", title: "Double-Entry MySQL", sub: "Immutable Audit Log & ROI Rollups" }
+      ],
       techStack: ["Laravel", "Double-Entry Ledger", "RESTful APIs", "Digital Wallet", "MySQL", "Anti-Fraud Algorithms"],
       challenges: [
         "Ensuring complete financial accuracy and atomicity for in-app wallet balances and transactions.",
@@ -867,9 +1040,20 @@ const projectDetailsData = {
       ]
     },
     ar: {
-      title: "AdVance",
+      title: "AdVance — سوق الإعلانات والمحافظ الرقمية",
       badge: "محفظة رقمية وسجل محاسبي متطور (FinTech & AdTech)",
       summary: "سوق رقمي واسع النطاق يربط بين المعلنين والتطبيقات المستضيفة مع إدارة دقيقة للمحافظ المالية والحملات الإعلانية ومكافحة الاحتيال.",
+      kpis: [
+        { val: "قيد مزدوج", lbl: "سجل محاسبي غير قابل للتلاعب" },
+        { val: "Anti-Fraud", lbl: "كشف وفلترة النقرات والزيارات الوهمية" },
+        { val: "تحليلات لحظية", lbl: "جداول تجميعية لعوائد الحملات والأرباح" }
+      ],
+      architecture: [
+        { step: "01 • الزيارات", title: "طلبات عرض الإعلانات", sub: "التطبيقات المستضيفة ولوحات المعلنين" },
+        { step: "02 • الفلترة", title: "محرك كشف الاحتيال", sub: "بصمة رقمية وتحديد معدل الطلبات" },
+        { step: "03 • النواة المالية", title: "المحفظة والتسويات", sub: "تحويلات ذرية وحجز أرصدة الحملات" },
+        { step: "04 • السجل المحاسبي", title: "Double-Entry MySQL", sub: "قيود محاسبية متطابقة وتقارير فورية" }
+      ],
       techStack: ["Laravel", "Double-Entry Ledger", "RESTful APIs", "Digital Wallet", "MySQL", "Anti-Fraud Algorithms"],
       challenges: [
         "ضمان الدقة المالية المطلقة والتماسك الذري لجميع حركات المحفظة الرقمية والأرصدة.",
@@ -885,9 +1069,20 @@ const projectDetailsData = {
   },
   brief: {
     en: {
-      title: "BriefCode",
+      title: "BriefCode — Low-Code Compiler Engine",
       badge: "Aspect-Oriented Programming (AOP) & Compilers",
       summary: "Low-code system built to accelerate mobile software creation with aspect separation, resource competition schedulers, and design patterns.",
+      kpis: [
+        { val: "AOP Core", lbl: "Zero-Bloat Cross-Cutting Interceptors" },
+        { val: "AST Parser", lbl: "Visual Schema to Executable Code" },
+        { val: "Deadlock-Free", lbl: "Priority Resource Competition Locks" }
+      ],
+      architecture: [
+        { step: "01 • Blueprint", title: "Visual Low-Code Input", sub: "Component & Logic Definitions" },
+        { step: "02 • Compiler", title: "Lexer & AST Parser", sub: "Syntax Validation & Tree Building" },
+        { step: "03 • AOP Weaver", title: "Aspect Interceptors", sub: "Logging, Security & Audit Injection" },
+        { step: "04 • Runtime", title: "Priority Scheduler", sub: "Deadlock-Free Artifact Generation" }
+      ],
       techStack: ["PHP Core", "AOP Concepts", "Compiler / AST Parsing", "Factory & Façade Patterns", "Architecture Patterns"],
       challenges: [
         "Decoupling cross-cutting logic (logging, security, performance audits) from core logic without bloat.",
@@ -901,9 +1096,20 @@ const projectDetailsData = {
       ]
     },
     ar: {
-      title: "BriefCode",
+      title: "BriefCode — محرك تطوير منخفض الكود",
       badge: "البرمجة موجهة الجوانب (AOP) وهندسة المترجمات",
       summary: "بيئة تطوير منخفضة الكود لتسريع إنشاء تطبيقات الهواتف، تعتمد على فصل الاهتمامات وجدولة الموارد وأنماط التصميم.",
+      kpis: [
+        { val: "معمارية AOP", lbl: "فصل نظيف للأمان والتسجيل وتتبع الأداء" },
+        { val: "محلل AST", lbl: "تحويل المخططات المرئية إلى كود تنفيذي" },
+        { val: "0 Deadlocks", lbl: "جدولة ذكية للتنافس على الموارد" }
+      ],
+      architecture: [
+        { step: "01 • التصميم", title: "مخططات Low-Code", sub: "تعريف المكونات ومسارات المنطق" },
+        { step: "02 • المترجم", title: "تحليل شجرة النحو AST", sub: "التدقيق النحوي وبناء الشجرة البرمجية" },
+        { step: "03 • طبقة الجوانب", title: "مستمعات AOP", sub: "حقن الأمان والتدقيق دون تلويث الكود" },
+        { step: "04 • التنفيذ", title: "مجدول الأولويات", sub: "تخصيص الموارد وتوليد حزمة التطبيق" }
+      ],
       techStack: ["PHP Core", "AOP Concepts", "Compiler / AST Parsing", "Factory & Façade Patterns", "Architecture Patterns"],
       challenges: [
         "فصل الاهتمامات المشتركة (التسجيل، الأمان، وتتبع الأداء) عن منطق البرنامج الأساسي دون تعقيد الكود.",
@@ -919,9 +1125,20 @@ const projectDetailsData = {
   },
   dream: {
     en: {
-      title: "Dream Shop",
+      title: "Dream Shop — Multi-Vendor E-Commerce",
       badge: "Scalable E-Commerce & Multi-Vendor APIs",
       summary: "Multi-user e-commerce platform powering mobile clients with real-time stock management, cart sync, and secure transactions.",
+      kpis: [
+        { val: "3 Personas", lbl: "Buyers, Merchants & Marketplace Admins" },
+        { val: "ACID Cart", lbl: "Atomic Stock Reservation on Checkout" },
+        { val: "Idempotent", lbl: "Duplicate-Safe Order & Payment Flows" }
+      ],
+      architecture: [
+        { step: "01 • Mobile App", title: "Buyer & Vendor Clients", sub: "Catalog Filtering & Cart Sync" },
+        { step: "02 • Auth Layer", title: "Sanctum & Policies", sub: "Strict Buyer / Vendor Role Isolation" },
+        { step: "03 • Order Engine", title: "Checkout Pipeline", sub: "Idempotency Keys & Pricing Rules" },
+        { step: "04 • Relational DB", title: "Transactional MySQL", sub: "Inventory Reservation Locks" }
+      ],
       techStack: ["Laravel", "RESTful APIs", "Relational Database Design", "Sanctum Auth", "MySQL"],
       challenges: [
         "Synchronizing inventories in real-time across multiple concurrent buyer carts.",
@@ -935,9 +1152,20 @@ const projectDetailsData = {
       ]
     },
     ar: {
-      title: "Dream Shop",
+      title: "Dream Shop — متجر إلكتروني متعدد التجار",
       badge: "تجارة إلكترونية متعددة التجار وتطبيقات الهواتف",
       summary: "منصة تجارة إلكترونية متكاملة تخدم تطبيقات الهاتف مع إدارة دقيقة للمخزون وسلة المشتريات والطلبات.",
+      kpis: [
+        { val: "3 فئات", lbl: "المشترون، التجار وإدارة المنصة" },
+        { val: "حجز ذري", lbl: "حماية المخزون أثناء الدفع المتزامن" },
+        { val: "Idempotent", lbl: "منع تكرار الخصم أو الطلبات عند الانقطاع" }
+      ],
+      architecture: [
+        { step: "01 • تطبيق الهاتف", title: "واجهات المشتري والتاجر", sub: "فلترة المنتجات ومزامنة السلة" },
+        { step: "02 • التفويض", title: "Sanctum & Policies", sub: "عزل صارم لصلاحيات التجار والمشترين" },
+        { step: "03 • محرك الطلبات", title: "معالجة الدفع والطلبات", sub: "مفاتيح عدم التكرار وحساب العمولات" },
+        { step: "04 • قاعدة البيانات", title: "MySQL Transactions", sub: "قفل وحجز ذري لكميات المخزون" }
+      ],
       techStack: ["Laravel", "RESTful APIs", "Relational Database Design", "Sanctum Auth", "MySQL"],
       challenges: [
         "مزامنة المخزون في الوقت الفعلي عند إضافة المنتجات لعدة سلال تسوق في نفس اللحظة.",
@@ -953,9 +1181,20 @@ const projectDetailsData = {
   },
   mosaic: {
     en: {
-      title: "Mosaic Recoding Syria",
+      title: "Mosaic Recoding Syria — AI Urban Research",
       badge: "Open-Source AI & Urban Research Platform",
       summary: "Scientific data research platform by Reparametrize Foundation advancing post-crisis urban reconstruction and resilient city design through AI data analytics.",
+      kpis: [
+        { val: "208+ Hours", lbl: "Scientific R&D in IT & AI Department" },
+        { val: "Senior Leader", lbl: "Fast-Track Technical Team Leadership" },
+        { val: "Open-Source", lbl: "Announced at Recovery Pathways Event" }
+      ],
+      architecture: [
+        { step: "01 • Ingestion", title: "Field & Urban Datasets", sub: "Damage & Socio-Economic Surveys" },
+        { step: "02 • Sanitization", title: "Laravel ETL Pipelines", sub: "Schema Normalization & Validation" },
+        { step: "03 • Intelligence", title: "AI Analytics Models", sub: "Urban Resilience & Recovery Scoring" },
+        { step: "04 • Open Access", title: "Public Research APIs", sub: "Open Database for Global Researchers" }
+      ],
       techStack: ["Laravel Backend", "AI Data Pipelines", "Open Database APIs", "Urban Resilience Analytics", "Data Visualization"],
       challenges: [
         "Processing large heterogeneous datasets regarding damaged urban structures and socio-economic markers.",
@@ -969,9 +1208,20 @@ const projectDetailsData = {
       ]
     },
     ar: {
-      title: "Mosaic Recoding Syria",
+      title: "Mosaic Recoding Syria — أبحاث المدن الذكية",
       badge: "منصة علمية مفتوحة المصدر مدعومة بالذكاء الاصطناعي",
       summary: "منصة أبحاث علمية تابعة لـ Reparametrize Foundation لتوظيف الذكاء الاصطناعي في إعادة إعمار المدن المتضررة وتخطيط المرونة الحضرية.",
+      kpis: [
+        { val: "+208 ساعات", lbl: "بحث وتطوير في قسم IT & AI" },
+        { val: "Senior Leader", lbl: "قيادة الفريق التقني في وقت قياسي" },
+        { val: "قاعدة مفتوحة", lbl: "أُعلن عنها في مؤتمر Recovery Pathways" }
+      ],
+      architecture: [
+        { step: "01 • جمع البيانات", title: "بيانات المسح الحضري", sub: "مؤشرات الأضرار والبنية الاقتصادية" },
+        { step: "02 • التنقية", title: "قنوات معالجة Laravel", sub: "توحيد المعايير وتدقيق جودة البيانات" },
+        { step: "03 • الذكاء الاصطناعي", title: "نماذج التحليل الحضري", sub: "تقييم المرونة وأولويات إعادة الإعمار" },
+        { step: "04 • الإتاحة العلمية", title: "واجهات البيانات المفتوحة", sub: "قاعدة بيانات عامة للباحثين دولياً" }
+      ],
       techStack: ["Laravel Backend", "AI Data Pipelines", "Open Database APIs", "Urban Resilience Analytics", "Data Visualization"],
       challenges: [
         "معالجة مجموعات بيانات ضخمة ومتباينة حول الأضرار الحضرية والمؤشرات الاجتماعية والاقتصادية للمدن.",
@@ -1024,56 +1274,141 @@ function initProjectDetailModal() {
 function renderProjectDetails(key) {
   const modalBody = document.getElementById('projectModalBody');
   const modalTitle = document.getElementById('projectModalTitle');
+  const footerActions = document.getElementById('projectModalFooterActions');
   if (!modalBody || !projectDetailsData[key]) return;
 
-  const data = projectDetailsData[key][currentLang];
+  activeProjectKey = key;
+  const projectMeta = projectDetailsData[key];
+  const data = projectMeta[currentLang];
   const isRtl = currentLang === 'ar';
 
   if (modalTitle) {
     modalTitle.textContent = data.title;
   }
 
-  const tagsHtml = data.techStack.map(t => `<span class="tag-pill" style="color: #ff2d20; border-color: rgba(255,45,32,0.25);">${t}</span>`).join('');
-  const challengesHtml = data.challenges.map(c => `<li style="margin-bottom: 0.5rem; display: flex; align-items: flex-start; gap: 0.5rem;"><span style="color: #f59e0b;">▸</span> <span>${c}</span></li>`).join('');
-  const solutionsHtml = data.solutions.map(s => `<li style="margin-bottom: 0.5rem; display: flex; align-items: flex-start; gap: 0.5rem;"><span style="color: #10b981;">✓</span> <span>${s}</span></li>`).join('');
+  const liveBannerHtml = projectMeta.liveUrl
+    ? `
+      <a href="${projectMeta.liveUrl}" target="_blank" rel="noopener noreferrer" class="project-live-pill" style="font-size: 0.82rem; padding: 0.35rem 0.85rem;">
+        <span class="pulse-dot-sm"></span>
+        <span>${projectMeta.liveDomain} ↗</span>
+      </a>
+    `
+    : '';
+
+  if (footerActions) {
+    footerActions.innerHTML = projectMeta.liveUrl
+      ? `
+        <a href="${projectMeta.liveUrl}" target="_blank" rel="noopener noreferrer" class="project-live-btn !py-2 !px-4 !text-sm">
+          <span>${isRtl ? `زيارة الموقع المباشر (${projectMeta.liveDomain})` : `Visit Live Website (${projectMeta.liveDomain})`}</span>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+            <polyline points="15 3 21 3 21 9"></polyline>
+            <line x1="10" y1="14" x2="21" y2="3"></line>
+          </svg>
+        </a>
+      `
+      : '';
+  }
+
+  const kpisHtml = (data.kpis || []).map(k => `
+    <div class="modal-kpi-card">
+      <span class="modal-kpi-val" dir="auto">${k.val}</span>
+      <span class="modal-kpi-lbl">${k.lbl}</span>
+    </div>
+  `).join('');
+
+  const arrowSvg = `
+    <div class="arch-arrow" aria-hidden="true">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="5" y1="12" x2="19" y2="12"></line>
+        <polyline points="12 5 19 12 12 19"></polyline>
+      </svg>
+    </div>
+  `;
+
+  const archHtml = (data.architecture || []).map((node, idx, arr) => `
+    <div class="arch-node">
+      <span class="arch-node-step">${node.step}</span>
+      <span class="arch-node-title">${node.title}</span>
+      <span class="arch-node-sub">${node.sub}</span>
+    </div>
+    ${idx < arr.length - 1 ? arrowSvg : ''}
+  `).join('');
+
+  const tagsHtml = data.techStack.map(t => `<span class="tag-pill" style="color: #f8fafc; border-color: rgba(255,45,32,0.3); background: rgba(255,45,32,0.08);">${t}</span>`).join('');
+  const challengesHtml = data.challenges.map(c => `<li style="margin-bottom: 0.6rem; display: flex; align-items: flex-start; gap: 0.5rem; line-height: 1.55;"><span style="color: #f59e0b; flex-shrink: 0;">▸</span> <span>${c}</span></li>`).join('');
+  const solutionsHtml = data.solutions.map(s => `<li style="margin-bottom: 0.6rem; display: flex; align-items: flex-start; gap: 0.5rem; line-height: 1.55;"><span style="color: #10b981; flex-shrink: 0;">✓</span> <span>${s}</span></li>`).join('');
 
   modalBody.setAttribute('dir', isRtl ? 'rtl' : 'ltr');
   modalBody.style.textAlign = isRtl ? 'right' : 'left';
 
   modalBody.innerHTML = `
-    <div style="margin-bottom: 1.5rem;">
-      <span class="project-category-badge" style="color: #34d399; background: rgba(16, 185, 129, 0.1); border-color: rgba(16, 185, 129, 0.3);">
-        ${data.badge}
-      </span>
-      <p style="font-size: 1.1rem; color: #f8fafc; margin-top: 1rem; line-height: 1.6;">
+    <div style="margin-bottom: 1.35rem;">
+      <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.75rem;">
+        <span class="project-category-badge" style="color: #34d399; background: rgba(16, 185, 129, 0.1); border-color: rgba(16, 185, 129, 0.3);">
+          ${data.badge}
+        </span>
+        ${liveBannerHtml}
+      </div>
+      <p style="font-size: 1.02rem; color: #e2e8f0; margin-top: 0.9rem; line-height: 1.65;">
         ${data.summary}
       </p>
     </div>
 
-    <div style="margin-bottom: 1.75rem;">
-      <div style="font-size: 0.85rem; font-weight: 700; text-transform: uppercase; color: var(--text-muted); margin-bottom: 0.6rem;">
-        ${isRtl ? 'التقنيات المستخدمة:' : 'Technologies & Architecture:'}
+    ${kpisHtml ? `<div class="modal-kpi-grid">${kpisHtml}</div>` : ''}
+
+    ${archHtml ? `
+      <div class="arch-diagram-box">
+        <div class="arch-diagram-header">
+          <span style="display: inline-flex; align-items: center; gap: 0.45rem;">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+              <polyline points="2 17 12 22 22 17"></polyline>
+              <polyline points="2 12 12 17 22 12"></polyline>
+            </svg>
+            <span>${isRtl ? 'مخطط تدفق المعمارية الهندسية (System Pipeline)' : 'System Architecture & Request Pipeline'}</span>
+          </span>
+          <span style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--text-muted);">END-TO-END FLOW</span>
+        </div>
+        <div class="arch-flow">
+          ${archHtml}
+        </div>
+      </div>
+    ` : ''}
+
+    <div style="margin-bottom: 1.5rem;">
+      <div style="font-size: 0.8rem; font-weight: 700; text-transform: uppercase; color: var(--text-muted); margin-bottom: 0.55rem; letter-spacing: 0.03em;">
+        ${isRtl ? 'الترسانة التقنية والمعمارية:' : 'Technologies & Stack:'}
       </div>
       <div style="display: flex; flex-wrap: wrap; gap: 0.4rem;">
         ${tagsHtml}
       </div>
     </div>
 
-    <div style="display: grid; grid-template-columns: 1fr; gap: 1.5rem; margin-bottom: 1.5rem;">
-      <div style="background: rgba(245, 158, 11, 0.05); border: 1px solid rgba(245, 158, 11, 0.2); border-radius: 0.85rem; padding: 1.25rem;">
-        <h4 style="color: #fbbf24; font-size: 1rem; font-weight: 700; margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.5rem;">
-          ${isRtl ? 'التحديات التقنية:' : 'Key Engineering Challenges:'}
+    <div class="modal-cs-grid">
+      <div style="background: rgba(245, 158, 11, 0.045); border: 1px solid rgba(245, 158, 11, 0.2); border-radius: 0.9rem; padding: 1.2rem;">
+        <h4 style="color: #fbbf24; font-size: 0.96rem; font-weight: 800; margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.45rem;">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>
+            <line x1="12" y1="9" x2="12" y2="13"></line>
+            <line x1="12" y1="17" x2="12.01" y2="17"></line>
+          </svg>
+          <span>${isRtl ? 'التحديات الهندسية:' : 'Key Engineering Challenges:'}</span>
         </h4>
-        <ul style="list-style: none; font-size: 0.925rem; color: #cbd5e1; padding: 0;">
+        <ul style="list-style: none; font-size: 0.88rem; color: #cbd5e1; padding: 0; margin: 0;">
           ${challengesHtml}
         </ul>
       </div>
 
-      <div style="background: rgba(16, 185, 129, 0.05); border: 1px solid rgba(16, 185, 129, 0.2); border-radius: 0.85rem; padding: 1.25rem;">
-        <h4 style="color: #34d399; font-size: 1rem; font-weight: 700; margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.5rem;">
-          ${isRtl ? 'الحلول والنتائج المنفذة:' : 'Implemented Architectural Solutions:'}
+      <div style="background: rgba(16, 185, 129, 0.045); border: 1px solid rgba(16, 185, 129, 0.2); border-radius: 0.9rem; padding: 1.2rem;">
+        <h4 style="color: #34d399; font-size: 0.96rem; font-weight: 800; margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.45rem;">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+          </svg>
+          <span>${isRtl ? 'الحلول المعمارية المنفذة:' : 'Architectural Solutions:'}</span>
         </h4>
-        <ul style="list-style: none; font-size: 0.925rem; color: #cbd5e1; padding: 0;">
+        <ul style="list-style: none; font-size: 0.88rem; color: #cbd5e1; padding: 0; margin: 0;">
           ${solutionsHtml}
         </ul>
       </div>
@@ -1088,6 +1423,7 @@ function initContactActions() {
   if (copyEmailBtn) {
     copyEmailBtn.addEventListener('click', (e) => {
       e.preventDefault();
+      e.stopPropagation();
       copyToClipboard('wardalshaheen1@gmail.com');
     });
   }
@@ -1097,6 +1433,7 @@ function initContactActions() {
   if (copyPhoneBtn) {
     copyPhoneBtn.addEventListener('click', (e) => {
       e.preventDefault();
+      e.stopPropagation();
       copyToClipboard('+963946552865');
     });
   }
@@ -1191,14 +1528,28 @@ function showToast(message) {
   }, 3500);
 }
 
-// ScrollSpy & Back to top
+// ScrollSpy, Top Reading Progress Bar & Back to top
 function initScrollSpy() {
   const backToTopBtn = document.getElementById('backToTopBtn');
+  const scrollProgress = document.getElementById('scrollProgress');
+  const mainNavbar = document.getElementById('mainNavbar');
   const sections = document.querySelectorAll('section[id]');
   const navLinks = document.querySelectorAll('.nav-link');
 
-  window.addEventListener('scroll', () => {
-    const scrollY = window.pageYOffset;
+  const updateOnScroll = () => {
+    const scrollY = window.pageYOffset || document.documentElement.scrollTop;
+
+    // Top reading progress bar
+    if (scrollProgress) {
+      const docHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      const ratio = docHeight > 0 ? Math.min(1, Math.max(0, scrollY / docHeight)) : 0;
+      scrollProgress.style.transform = `scaleX(${ratio})`;
+    }
+
+    // Subtle scrolled navbar elevation
+    if (mainNavbar) {
+      mainNavbar.classList.toggle('scrolled', scrollY > 24);
+    }
 
     // Back to top visibility
     if (backToTopBtn) {
@@ -1224,7 +1575,10 @@ function initScrollSpy() {
         });
       }
     });
-  });
+  };
+
+  window.addEventListener('scroll', updateOnScroll, { passive: true });
+  updateOnScroll();
 
   if (backToTopBtn) {
     backToTopBtn.addEventListener('click', () => {
@@ -1292,7 +1646,10 @@ function initStatsObserver() {
       if (entry.isIntersecting && !hasAnimated) {
         hasAnimated = true;
         statNumbers.forEach(el => {
-          const target = el.getAttribute('data-val');
+          const i18nKey = el.getAttribute('data-i18n');
+          const target = (i18nKey && translations[currentLang] && translations[currentLang][i18nKey])
+            ? translations[currentLang][i18nKey]
+            : el.getAttribute('data-val');
           if (target) {
             el.textContent = target;
           }
